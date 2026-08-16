@@ -1,0 +1,102 @@
+@use "../../utils/" as *;
+
+/*  3.4 Slider  */
+
+.mi-slider {
+  &-item {
+    height: 810px;
+    position: relative;
+    background-size: cover;
+    @media #{$xs} {
+      height: 420px;
+    }
+    @media #{$md} {
+      height: 520px;
+    }
+    @media #{$lg} {
+      height: 600px;
+    }
+    @media #{$xl} {
+      height: 700px;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: #000;
+      opacity: 0.4;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &-title {
+    font-size: 100px;
+    line-height: 1.1;
+    @media #{$xs} {
+      font-size: 25px;
+    }
+    @media #{$md} {
+      font-size: 47px;
+    }
+    @media #{$lg} {
+      font-size: 62px;
+    }
+    @media #{$xl} {
+      font-size: 75px;
+    }
+  }
+  &-subtitle {
+    color: var(--mi-theme-color);
+    & i {
+      background-color: var(--mi-theme-color);
+      width: 70px;
+      height: 1px;
+      margin: 0 18px;
+      display: inline-block;
+    }
+  }
+  &-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 64px;
+    width: 54px;
+    height: 54px;
+    color: #fff;
+    font-size: 14px;
+    z-index: 2;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    &-next {
+      left: auto;
+      right: 64px;
+    }
+    &:hover {
+      background-color: var(--mi-theme-color);
+      color: #121018;
+    }
+  }
+}
+
+// Top slider text animation: Home 3
+.mi-slider-subtitle,
+.mi-slider-title,
+.mi-slider-btn {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.9s;
+}
+.swiper-slide-active .mi-slider-subtitle {
+  transition-delay: 0.3s;
+}
+.swiper-slide-active .mi-slider-title {
+  transition-delay: 0.6s;
+}
+.swiper-slide-active .mi-slider-btn {
+  transition-delay: 0.9s;
+}
+.swiper-slide-active .mi-slider-subtitle,
+.swiper-slide-active .mi-slider-title,
+.swiper-slide-active .mi-slider-btn {
+  opacity: 1;
+  transform: translateY(0);
+}

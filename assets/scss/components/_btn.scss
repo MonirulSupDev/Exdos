@@ -1,0 +1,148 @@
+@use "../utils/" as *;
+
+/* 2.1 Btn */
+
+.mi-btn {
+  color: var(--mi-heading-color);
+  background-color: var(--mi-theme-color);
+  font-family: var(--mi-font-heading);
+  padding: 24px 46px;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 22px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 70px;
+    background-image: url("/assets/img/shapes/yellow-btn-shape.png");
+    top: 0;
+    right: 0;
+    border-radius: 5px 5px 5px 0;
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    color: #fff;
+    background-color: var(--mi-primary-color-2);
+    &::after {
+      background-image: url("/assets/img/shapes/red-btn-shape.png");
+    }
+  }
+  & i {
+    transform: rotate(45deg);
+  }
+  &-transparent {
+    background-color: transparent;
+    padding: 0;
+    & i {
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      background: transparent;
+      & i {
+        transform: translate(3px, -3px) rotate(45deg);
+      }
+    }
+    &::after {
+      display: none;
+    }
+  }
+  &-sm {
+    padding: 19px 46px;
+    &::after {
+      height: 60px;
+    }
+  }
+  &-xs {
+    padding: 9px 46px;
+    transition: all 0.3s ease;
+    &::after {
+      height: 40px;
+    }
+    &:hover {
+      background-color: var(--mi-primary-color) !important;
+      color: #fff;
+    }
+  }
+  &-blue {
+    background-color: var(--mi-primary-color);
+    color: #fff;
+    padding: 19px 45px;
+    transition: all 0.3s ease;
+    &:hover {
+      color: var(--mi-heading-color);
+      background-color: var(--mi-theme-color);
+      &::after {
+        background-image: url("/assets/img/shapes/yellow-btn-shape.png");
+      }
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 22px;
+      height: 60px;
+      background-image: url("/assets/img/shapes/blue-btn-shape.png");
+      top: 0;
+      right: 0;
+      border-radius: 5px 5px 5px 0;
+      transition: all 0.3s ease;
+    }
+  }
+  &-blue-arrow {
+    color: #fff;
+    background-color: var(--mi-primary-color);
+    padding: 19px 33px;
+    &::after {
+      display: none;
+    }
+    &:hover {
+      background-color: var(--mi-primary-color-2);
+      & i {
+        transform: translate(3px, -3px) rotate(45deg);
+      }
+    }
+    & i {
+      transition: all 0.3s ease;
+    }
+  }
+  &-red {
+    background-color: var(--mi-primary-color-2);
+    color: #fff;
+    padding: 19px 45px;
+    &:hover {
+      background-color: var(--mi-primary-color);
+      &::after {
+        background-image: url("/assets/img/shapes/blue-btn-shape.png");
+      }
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 22px;
+      height: 60px;
+      background-image: url("/assets/img/shapes/red-btn-shape.png");
+      top: 0;
+      right: 0;
+      border-radius: 5px 5px 5px 0;
+      transition: all 0.3s ease;
+    }
+  }
+  &-secondary {
+    background-color: var(--mi-secondary-color);
+    color: #fff;
+    padding: 19px 33px;
+    & i {
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      background-color: var(--mi-primary-color);
+      & i {
+        transform: translate(3px, -3px) rotate(45deg);
+      }
+    }
+    &::after {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+@use "../../utils/" as *;
+
+// Home 01
+.mi-portfolio {
+  &-bg {
+    background-size: cover;
+    @media #{$lg,$md} {
+      padding-right: 0 !important;
+    }
+    @media #{$xs,$sm} {
+      padding-right: 0 !important;
+      padding-top: 60px !important;
+      padding-bottom: 60px !important;
+    }
+  }
+  &-skill {
+    & h1 {
+      font-size: 100px;
+      display: inline-block;
+      @media #{$xxxl,$sm} {
+        font-size: 85px;
+      }
+      @media #{$xxl} {
+        font-size: 70px;
+      }
+      @media #{$xl,$xs} {
+        font-size: 56px;
+      }
+      & a {
+        display: block;
+        border-bottom: 1px solid #2f446b;
+        padding-left: 100px;
+        transition: all 0.3s ease;
+        &:hover {
+          color: var(--mi-theme-color);
+          border-color: var(--mi-theme-color);
+        }
+        @media #{$sm,$xs} {
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+  &-img {
+    & img {
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+  &-projects {
+    border: 2px solid rgba($color: #fff, $alpha: 0.3);
+    border-radius: 100%;
+    padding: 44px 74px;
+    & a {
+      color: rgba($color: #fff, $alpha: 0.3);
+      transition: all 0.3s ease;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+// Home 02
+.mi-portfolio2 {
+  &-img {
+    position: relative;
+    &:hover {
+      & .mi-portfolio2-hover {
+        opacity: 1;
+        visibility: visible;
+        bottom: 13%;
+      }
+    }
+    & img {
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+  &-hover {
+    position: absolute;
+    bottom: 0%;
+    left: 17%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    &-cat {
+      background-color: #fff;
+      padding: 5px 15px;
+      margin-bottom: 5px;
+      display: inline-block;
+    }
+    &-title {
+      background-color: #fff;
+      padding: 5px 18px;
+    }
+  }
+}

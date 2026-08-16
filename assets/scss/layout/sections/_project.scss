@@ -1,0 +1,209 @@
+@use "../../utils/" as *;
+
+// Home 03
+.mi-project {
+  &-area {
+    @media #{$xs} {
+      margin-bottom: 70px !important;
+      padding-top: 80px !important;
+      padding-bottom: 60px !important;
+    }
+    & .mi-section-info ul li::before {
+      color: var(--mi-primary-color-2);
+    }
+  }
+  &-img {
+    @media #{$xs} {
+      margin-bottom: 30px;
+    }
+    & img {
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+  &-para {
+    @media #{$xs} {
+      padding: 0 15px;
+    }
+  }
+  &-content {
+    @media #{$md} {
+      padding-left: 80px !important;
+    }
+    @media #{$xs} {
+      padding-left: 0 !important;
+      margin-bottom: 30px;
+    }
+  }
+  &-number {
+    font-family: var(--mi-font-heading);
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 60px;
+      background-color: #a3aec3;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 35px;
+      @media #{$xs} {
+        left: 35px;
+      }
+    }
+  }
+  &-cat {
+    color: #0a0e1a;
+    font-size: 15px;
+    padding: 0px 17px;
+    border-radius: 15px;
+  }
+  &-title {
+    @media #{$md} {
+      font-size: 22px !important;
+    }
+    & a {
+      &:hover {
+        color: var(--mi-primary-color-2);
+      }
+    }
+  }
+  &-btn {
+    & a {
+      color: #a3aec3;
+      &:hover {
+        color: var(--mi-primary-color-2);
+      }
+    }
+  }
+}
+
+// Home 04
+.mi-project4 {
+  &-area {
+    & .mi-section-info ul li::before {
+      color: var(--mi-primary-color-2);
+    }
+    // Swiper slide
+    & .swiper-slide {
+      margin-right: 30px !important;
+    }
+  }
+  &-arrow {
+    transition: all 0.3s ease;
+    &:hover {
+      color: var(--mi-primary-color-2);
+    }
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      & span {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        & svg {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+  &-card {
+    background-color: #ffe9c9;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  &-img {
+    & img {
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+  &-title {
+    @media #{$xxl} {
+      font-size: 25px !important;
+    }
+    @media #{$lg} {
+      font-size: 24px !important;
+    }
+    & a {
+      &:hover {
+        color: var(--mi-primary-color-2);
+      }
+    }
+  }
+}
+
+// Home 05
+.mi-project5 {
+  &-area {
+    @media #{$md} {
+      margin-top: 90px !important;
+      margin-bottom: 90px !important;
+    }
+    @media #{$sm,$xs} {
+      margin-top: 70px !important;
+      margin-bottom: 70px !important;
+    }
+    & .mi-section-info ul li::before {
+      color: var(--mi-primary-color-2);
+    }
+  }
+  &-title {
+    @media #{$sm} {
+      font-size: 37px !important;
+    }
+  }
+  &-content {
+    padding: 30px;
+    &-text {
+      @media #{$lg} {
+        padding-left: 10px;
+      }
+      @media #{$md,$sm,$xs} {
+        padding-bottom: 30px;
+      }
+    }
+    &-cat {
+      font-size: 15px;
+      background-color: #ffe9c9;
+      padding: 2px 10px;
+      border-radius: 15px;
+      color: var(--mi-heading-color);
+      font-weight: 500;
+    }
+    &-title {
+      @media #{$xl} {
+        font-size: 33px !important;
+      }
+      @media #{$lg} {
+        font-size: 24px !important;
+      }
+    }
+    &-btn {
+      & a {
+        &:hover {
+          color: var(--mi-secondary-color);
+        }
+      }
+    }
+    &-img {
+      & img {
+        width: 100%;
+      }
+    }
+  }
+  &-logo {
+    padding-top: 100px;
+    padding-bottom: 75px;
+    @media #{$sm,$xs} {
+      border-right: 1px solid var(--mi-body-color);
+      padding-top: 60px;
+      padding-bottom: 48px;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@use "../../utils/" as *;
+
+/*  3.17 Step  */
+
+.mi-client {
+  &-area {
+    @media #{$xs} {
+      padding-top: 75px !important;
+      padding-bottom: 60px !important;
+    }
+    & .mi-section-info ul li::before {
+      color: var(--mi-primary-color-2);
+    }
+  }
+  &-logos {
+    padding-left: 86px;
+    @media #{$xl,$xs} {
+      padding-left: 0;
+    }
+  }
+  &-logo {
+    border: 1px solid var(--mi-body-color);
+    border-radius: 10px;
+    width: 280px;
+    height: 125px;
+    line-height: 7;
+    text-align: center;
+  }
+}
+.cus-marg {
+  @media #{$xl} {
+    margin-left: 2px;
+  }
+}

@@ -1,0 +1,100 @@
+@use "../../utils/" as *;
+
+/*  3.11 Brand  */
+
+.mi-brand {
+  &-area {
+    @media #{$md} {
+      margin-bottom: 70px !important;
+    }
+    & .swiper-slide {
+      width: auto;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+    & .swiper-free-mode {
+      > .swiper-wrapper {
+        -webkit-transition-timing-function: linear !important;
+        transition-timing-function: linear !important;
+        margin: 0 auto;
+      }
+    }
+    &-2 {
+      @media #{$xs,$sm} {
+        margin-bottom: 70px !important;
+      }
+    }
+    &-3 {
+      @media #{$xs} {
+        margin-bottom: 80px !important;
+      }
+      & h1 {
+        @media #{$lg} {
+          font-size: 80px !important;
+        }
+        @media #{$xs} {
+          font-size: 50px !important;
+        }
+      }
+    }
+  }
+}
+
+// Home 05-->>
+.mi-brand5 {
+  &-area {
+    @media #{$xs} {
+      margin-bottom: 85px !important;
+    }
+  }
+  &-container {
+    border: 1px solid var(--mi-body-color);
+    position: relative;
+  }
+  &-title {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 0 20px;
+    @media #{$sm} {
+      font-size: 24px !important;
+    }
+    @media #{$xs} {
+      font-size: 14px !important;
+      padding: 0 5px;
+    }
+  }
+  &-row {
+    padding: 70px;
+    @media #{$xl} {
+      padding: 45px;
+    }
+    @media #{$lg} {
+      padding: 30px 20px;
+    }
+    @media #{$md} {
+      padding: 30px 10px;
+    }
+    @media #{$xs} {
+      padding: 55px;
+    }
+    & > :not(:nth-child(4)) {
+      margin-bottom: 30px;
+    }
+  }
+  &-brand-logo {
+    @media #{$xl} {
+      margin-right: 30px !important;
+    }
+    @media #{$lg} {
+      margin-right: 50px !important;
+    }
+    @media #{$sm,$xs} {
+      margin-right: 0 !important;
+      text-align: center;
+    }
+  }
+}

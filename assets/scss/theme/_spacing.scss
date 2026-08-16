@@ -1,0 +1,88 @@
+@use "../utils/" as *;
+
+/* 1.2 Default Spacing */
+
+// margin
+@for $i from 1 through 50 {
+  .ml-#{5 * $i} {
+    margin-left: 5px * $i;
+  }
+}
+
+@for $i from 1 through 50 {
+  .mr-#{5 * $i} {
+    margin-right: 5px * $i !important;
+  }
+}
+
+@for $i from 1 through 50 {
+  .mt-#{5 * $i} {
+    margin-top: 5px * $i !important;
+  }
+}
+
+@for $i from 1 through 50 {
+  .mb-#{5 * $i} {
+    margin-bottom: 5px * $i !important;
+  }
+}
+// padding
+@for $i from 1 through 50 {
+  .pb-#{5 * $i} {
+    padding-bottom: 5px * $i !important;
+  }
+}
+@for $i from 1 through 50 {
+  .pt-#{5 * $i} {
+    padding-top: 5px * $i !important;
+  }
+}
+@for $i from 1 through 50 {
+  .pl-#{5 * $i} {
+    padding-left: 5px * $i !important;
+  }
+}
+@for $i from 1 through 50 {
+  .pr-#{5 * $i} {
+    padding-right: 5px * $i !important;
+  }
+}
+.px-6 {
+  padding-left: 100px !important;
+  padding-right: 100px !important;
+  @media #{$sm,$xs} {
+    padding: 0 !important;
+  }
+}
+
+.pl-xl-0 {
+  @media #{$xl} {
+    padding-left: 0 !important;
+  }
+}
+.pl-md-0 {
+  @media #{$md} {
+    padding-left: 0 !important;
+  }
+}
+.pl-sm-0 {
+  @media #{$sm} {
+    padding-left: 0 !important;
+  }
+}
+.pl-xs-0 {
+  @media #{$xs} {
+    padding-left: 0 !important;
+  }
+}
+
+.pr-sm-0 {
+  @media #{$sm} {
+    padding-right: 0 !important;
+  }
+}
+.pr-xs-0 {
+  @media #{$xs} {
+    padding-right: 0 !important;
+  }
+}

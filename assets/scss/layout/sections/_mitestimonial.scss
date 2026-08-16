@@ -1,0 +1,609 @@
+@use "../../utils/" as *;
+
+/*  3.19 Mitestimonal  */
+
+// Home 01-->>
+.mi-testimonial {
+  position: relative;
+  @media #{$md,$sm} {
+    padding: 0 87px;
+  }
+  &-area {
+    @media #{$md,$xs,$sm} {
+      padding-top: 50px !important;
+      padding-bottom: 60px !important;
+    }
+  }
+  &-wrapper {
+    background-repeat: no-repeat;
+    background-position: center center;
+    @media #{$xxl,$lg} {
+      background-size: 34%;
+    }
+    @media #{$md,$xs,$sm} {
+      background-size: 58%;
+    }
+  }
+  & .photo-1 {
+    position: absolute;
+    left: 9%;
+    top: 21%;
+    @media #{$lg} {
+      left: 12%;
+      width: 19%;
+    }
+  }
+  & .photo-2 {
+    position: absolute;
+    right: 8%;
+    top: 29px;
+    @media #{$lg} {
+      right: 11%;
+      width: 19%;
+    }
+  }
+  &-text {
+    font-size: 100px;
+    z-index: 2;
+    position: relative;
+    @media #{$xxl} {
+      font-size: 71px;
+    }
+    @media #{$xl} {
+      font-size: 61px;
+    }
+    @media #{$lg} {
+      font-size: 49px;
+    }
+    @media #{$md} {
+      font-size: 40px;
+    }
+    @media #{$xs,$sm} {
+      font-size: 28px;
+    }
+  }
+  &-author {
+    & a {
+      &:hover {
+        color: var(--mi-primary-color);
+      }
+    }
+    &-name {
+      @media #{$xs,$sm} {
+        font-size: 25px !important;
+      }
+    }
+    &-designation {
+      position: relative;
+      display: inline-block;
+      transform: translateX(70%);
+      &::before {
+        position: absolute;
+        content: "";
+        width: 40px;
+        height: 1px;
+        background-color: #999;
+        top: 50%;
+        left: -50px;
+      }
+    }
+  }
+  &-arrow {
+    // Swiper slider arrow
+    .mi-test-arrow {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      z-index: 50;
+      transition: all 0.3s ease;
+      @media #{$xxxl,$xl} {
+        left: 5%;
+      }
+      @media #{$xxl} {
+        left: 7%;
+      }
+      @media #{$lg} {
+        left: 2%;
+      }
+      @media #{$sm,$md} {
+        left: 4%;
+      }
+      @media #{$xs} {
+        left: 6%;
+        top: 60%;
+      }
+    }
+    .mi-test-arrow-next {
+      left: auto;
+      right: 10%;
+      @media #{$xxxl,$xl} {
+        right: 5%;
+      }
+      @media #{$xxl} {
+        right: 7%;
+      }
+      @media #{$lg} {
+        right: 2%;
+      }
+      @media #{$sm,$md} {
+        right: 4%;
+      }
+      @media #{$xs} {
+        right: 6%;
+      }
+    }
+  }
+}
+
+// Home 02-->>
+.mi-testimonial2 {
+  &-area {
+    @media #{$md} {
+      margin-top: 60px !important;
+    }
+    @media #{$xs,$sm} {
+      padding-top: 75px !important;
+      padding-bottom: 70px !important;
+      margin-top: 50px !important;
+    }
+  }
+  &-author {
+    &-img {
+      & img {
+        width: 100px;
+        height: 100px;
+        border-radius: 15px;
+      }
+    }
+    &-name {
+      & h3 {
+        @media #{$xs,$sm} {
+          font-size: 20px !important;
+        }
+      }
+      & span {
+        @media #{$xs,$sm} {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  &-text {
+    & h2 {
+      @media #{$lg} {
+        font-size: 40px !important;
+      }
+      @media #{$md} {
+        font-size: 30px !important;
+      }
+      @media #{$xs} {
+        font-size: 15px !important;
+        line-height: 32px;
+      }
+      @media #{$sm} {
+        font-size: 23px !important;
+        line-height: 32px;
+      }
+    }
+  }
+  &-qmark-bottom {
+    position: relative;
+    & svg {
+      position: absolute;
+      bottom: 117px;
+      right: 167px;
+      @media #{$xl} {
+        bottom: 110px;
+        right: 146px;
+      }
+      @media #{$lg} {
+        bottom: 106px;
+        right: 97px;
+      }
+      @media #{$md} {
+        bottom: 99px;
+        right: 61px;
+      }
+      @media #{$xs} {
+        bottom: 96px;
+        right: 5px;
+      }
+      @media #{$sm} {
+        bottom: 95px;
+        right: 35px;
+      }
+    }
+  }
+  &-arrow {
+    margin-top: -60px;
+    z-index: 2;
+    position: relative;
+    @media #{$xs,$sm} {
+      margin-top: 15px;
+      padding-left: 0 !important;
+      text-align: center;
+    }
+    & span {
+      position: relative;
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      color: rgba($color: #fff, $alpha: 0.3);
+      & svg {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-45%);
+        left: 8%;
+      }
+    }
+  }
+  .swiper-slide.swiper-slide-active {
+    padding-left: 50px;
+    margin-right: 58px;
+  }
+}
+
+// Home 03-->>
+.mi-testimonial3 {
+  &-area {
+    @media #{$xs} {
+      margin-top: 80px !important;
+      margin-bottom: 0 !important;
+    }
+  }
+  &-img {
+    position: relative;
+    width: min(100%, 408px);
+    aspect-ratio: 408/360;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 80%;
+      left: 0;
+      bottom: 0;
+      background: #ff8653;
+      border-radius: 180px 180px 65px 65px;
+      z-index: 0;
+    }
+    & img {
+      width: 100%;
+      height: auto;
+      position: relative;
+      display: block;
+      z-index: 1;
+    }
+  }
+  &-text {
+    & h2 {
+      @media #{$lg} {
+        font-size: 27px !important;
+      }
+      @media #{$md} {
+        font-size: 17px !important;
+      }
+      @media #{$xs} {
+        font-size: 18px !important;
+        line-height: 28px;
+      }
+    }
+  }
+  &-icon {
+    @media #{$xs} {
+      margin-right: 5px !important;
+    }
+    & img {
+      @media #{$md,$sm,$xs} {
+        width: 100%;
+      }
+    }
+  }
+  &-author {
+    & h3 {
+      @media #{$md} {
+        font-size: 23px !important;
+      }
+      @media #{$xs} {
+        font-size: 21px !important;
+      }
+    }
+    & span {
+      @media #{$md} {
+        font-size: 13px !important;
+      }
+      @media #{$xs} {
+        font-size: 12px !important;
+      }
+    }
+  }
+  &-arrow {
+    &:hover {
+      color: var(--mi-primary-color-2);
+    }
+    &-wrapper {
+      z-index: 2;
+      position: relative;
+      padding-bottom: 98px;
+      @media #{$xl} {
+        margin-top: -45px !important;
+        padding-bottom: 45px;
+        padding-left: 80px !important;
+      }
+      @media #{$lg} {
+        margin-top: -70px !important;
+        padding-bottom: 70px;
+      }
+      @media #{$md} {
+        margin-top: -70px !important;
+        padding-bottom: 70px;
+      }
+      & button {
+        display: inline-block;
+      }
+      & span {
+        position: relative;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        color: #b4b4b4;
+        & svg {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-45%);
+          left: 8%;
+        }
+      }
+    }
+  }
+}
+
+// Home 04-->>
+.mi-testimonial4 {
+  &-area {
+    border-radius: 140px;
+    @media #{$xs} {
+      border-radius: 30px;
+      padding-top: 60px !important;
+      padding-bottom: 60px !important;
+    }
+    & .mi-section-info ul li::before {
+      color: var(--mi-primary-color-2);
+    }
+  }
+  &-shape {
+    &-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      @media #{$lg} {
+        left: -21%;
+      }
+      @media #{$md} {
+        top: -6%;
+        left: -26%;
+      }
+    }
+    &-bottom {
+      position: absolute;
+      bottom: -5%;
+      right: 0;
+      @media #{$lg} {
+        right: -14%;
+      }
+      @media #{$md} {
+        bottom: -28%;
+        right: -1%;
+      }
+    }
+  }
+  &-content {
+    text-align: center;
+    @media #{$lg} {
+      padding: 0 50px;
+    }
+    @media #{$md,$xs,$sm} {
+      padding: 0 60px;
+    }
+  }
+  &-text {
+    line-height: 50px;
+    @media #{$lg} {
+      font-size: 28px !important;
+    }
+    @media #{$md} {
+      font-size: 18px !important;
+      line-height: 35px;
+    }
+    @media #{$xs,$sm} {
+      font-size: 17px !important;
+      line-height: 30px;
+    }
+    & br {
+      @media #{$xl,$lg,$md,$sm,$xs} {
+        display: none;
+      }
+    }
+  }
+  &-author {
+    position: relative;
+    display: inline-block;
+    @media #{$md} {
+      font-size: 20px !important;
+    }
+    @media #{$xs,$sm} {
+      font-size: 19px !important;
+    }
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      transform: translateY(-50%);
+      right: 108%;
+      width: 100px;
+      height: 1px;
+      background-color: var(--mi-body-color);
+    }
+    &::after {
+      right: auto;
+      left: 108%;
+    }
+  }
+  &-designation {
+    display: block;
+    @media #{$md} {
+      font-size: 12px !important;
+    }
+    @media #{$xs,$sm} {
+      font-size: 13px !important;
+    }
+  }
+}
+
+// Thumbnail Slider
+.testimonial-thumb {
+  width: 500px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.testimonial-thumb .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.testimonial-thumb img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  transform: scale(0.8);
+}
+.testimonial-thumb .swiper-slide-thumb-active {
+  transition: all 0.3s ease;
+  position: relative;
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    right: 85%;
+    width: 60px;
+    height: 1px;
+    background-color: var(--mi-body-color);
+  }
+  &::after {
+    right: auto;
+    left: 85%;
+  }
+}
+.testimonial-thumb .swiper-slide-thumb-active img {
+  width: 96px;
+  height: 96px;
+  transform: scale(1);
+}
+
+// Navigation
+.mi-testimonial4-prev,
+.mi-testimonial4-next {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  line-height: 1;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid var(--mi-body-color);
+  z-index: 1;
+  &:hover {
+    background-color: var(--mi-primary-color-2);
+    border-color: var(--mi-primary-color-2);
+    color: #fff;
+  }
+}
+
+.mi-testimonial4-prev {
+  left: 0;
+}
+
+.mi-testimonial4-next {
+  right: 0;
+}
+
+// Home 05-->>
+.mi-testimonial5 {
+  &-area {
+    @media #{$xs} {
+      padding-top: 70px !important;
+      padding-bottom: 70px !important;
+      margin-bottom: 70px !important;
+    }
+    @media #{$sm} {
+      padding-top: 70px !important;
+      padding-bottom: 85px !important;
+      margin-bottom: 70px !important;
+    }
+    & .mi-section-info ul li::before {
+      color: var(--mi-secondary-color);
+    }
+    & .swiper.testimonial5-slider-active {
+      margin-right: -321px;
+    }
+    & .swiper-slide {
+      margin-right: 30px !important;
+    }
+  }
+  &-prev,
+  &-next {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 1;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid var(--mi-body-color);
+    &:hover {
+      background-color: var(--mi-secondary-color);
+      border-color: var(--mi-secondary-color);
+      color: #fff;
+    }
+  }
+  &-card {
+    padding: 50px;
+    border-radius: 20px;
+    background-color: #fff;
+    @media #{$xs} {
+      padding: 30px;
+    }
+  }
+  &-rating {
+    & i {
+      color: var(--mi-primary-color-2);
+      font-size: 14px;
+    }
+  }
+  &-text {
+    & p {
+      color: var(--mi-heading-color);
+      @media #{$xs} {
+        font-size: 21px;
+      }
+    }
+  }
+  &-author-name {
+    & h3 {
+      @media #{$xs} {
+        font-size: 23px;
+      }
+    }
+  }
+}

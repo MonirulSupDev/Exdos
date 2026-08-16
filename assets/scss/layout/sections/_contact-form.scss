@@ -1,0 +1,111 @@
+@use "../../utils/" as *;
+
+/*  3.16 Contact Form  */
+
+// Home 1 contact us
+.mi-contact {
+  &-title {
+    font-size: 100px;
+    @media #{$xl,$lg,$md} {
+      font-size: 85px;
+    }
+    @media #{$sm} {
+      font-size: 70px;
+    }
+    @media #{$xs} {
+      font-size: 65px;
+    }
+  }
+  &-form {
+    &-title {
+      margin-bottom: 37px;
+    }
+    &-input {
+      position: relative;
+      margin-bottom: 32px;
+      & label {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      & input {
+        padding-left: 100px;
+      }
+      & textarea {
+        height: 36px;
+        padding-left: 100px;
+        margin-bottom: 0;
+        resize: none;
+      }
+    }
+    &-btn {
+      margin-top: 5px;
+    }
+  }
+}
+
+// Home 04 contact form
+.mi-contact-form4 {
+  &-area {
+    & .mi-section-info ul li::before {
+      color: var(--mi-primary-color-2);
+    }
+  }
+  &-content {
+    @media #{$xs,$sm} {
+      padding-left: 0 !important;
+    }
+  }
+  &-title {
+    font-size: 47px !important;
+    @media #{$xs} {
+      font-size: 34px !important;
+    }
+  }
+  &-input {
+    height: 60px;
+    position: relative;
+    border: 1px solid var(--mi-body-color);
+    border-radius: 10px;
+    & input {
+      padding-left: 100px;
+      border: none;
+      height: 100%;
+    }
+    & label,
+    & i {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    & label {
+      left: 10px;
+    }
+    & i {
+      right: 10px;
+    }
+  }
+  &-textarea {
+    height: 160px;
+    border: 1px solid var(--mi-body-color);
+    border-radius: 10px;
+    position: relative;
+    & textarea {
+      padding-top: 50px;
+      border: none;
+      height: 100%;
+    }
+    & label,
+    & i {
+      position: absolute;
+      top: 20px;
+    }
+    & label {
+      left: 10px;
+    }
+    & i {
+      right: 10px;
+    }
+  }
+}

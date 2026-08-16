@@ -1,0 +1,182 @@
+@use "../../utils/" as *;
+
+/*  3.15 Team  */
+
+// Home 01
+.mi-team {
+  &-area {
+    margin-top: 70px !important;
+    margin-bottom: 60px !important;
+  }
+  &-arrow {
+    @media #{$sm,$xs} {
+      margin-top: 10px;
+    }
+    & span {
+      position: relative;
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      & svg {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-45%);
+        left: 8%;
+      }
+    }
+  }
+  &-img {
+    & img {
+      border-radius: 15px;
+      width: 100%;
+    }
+  }
+  &-social {
+    @media #{$sm,$xs} {
+      margin-top: 10px;
+      padding-left: 60px;
+    }
+    & ul {
+      & li {
+        & a {
+          &:hover {
+            & .fa-behance {
+              color: #105bf2;
+            }
+            & .fa-twitter {
+              color: #1c9cea;
+            }
+            & .fa-instagram {
+              color: #dc2743;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-author {
+    &-name {
+      font-size: 25px !important;
+    }
+    &-designation {
+      transform: translateX(38%) !important;
+    }
+  }
+}
+& .team-container {
+  @media #{$xxl,$xl,$lg} {
+    padding: 0 35px !important;
+  }
+  @media #{$md,$sm} {
+    padding: 0 20px !important;
+  }
+}
+
+// Home 02
+.mi-team2 {
+  &-area {
+    @media #{$md} {
+      padding-top: 80px !important;
+      padding-bottom: 50px !important;
+    }
+    @media #{$xs,$sm} {
+      padding-top: 75px !important;
+      padding-bottom: 40px !important;
+    }
+  }
+  &-card {
+    &-img {
+      border: 1px solid var(--mi-body-color);
+      border-radius: 15px;
+      &-wrapper {
+        position: relative;
+        &:hover {
+          & .mi-team2-social {
+            opacity: 1;
+            visibility: visible;
+            bottom: calc(50% - 50px);
+          }
+          & .mi-team2-card-img img {
+            filter: blur(2px);
+          }
+        }
+      }
+      & img {
+        border-radius: 15px;
+        transform: translate(10px, 10px);
+        width: 100%;
+        transition: all 0.4s ease;
+      }
+    }
+    &-content {
+      & h3 {
+        &:hover {
+          color: var(--mi-primary-color);
+        }
+      }
+    }
+  }
+  &-social {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% + 10px);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    & a {
+      color: var(--mi-heading-color);
+      background-color: #fff;
+      width: 40px;
+      height: 40px;
+      display: block;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 2.4;
+      &:hover {
+        scale: calc(1.1);
+      }
+    }
+  }
+}
+
+// Home 04
+.mi-team4 {
+  &-area {
+    & .mi-section-info ul li::before {
+      color: var(--mi-primary-color-2);
+    }
+  }
+  &-img {
+    position: relative;
+    border: 1px solid var(--mi-heading-color);
+    text-align: center;
+    border-radius: 185px 185px 0 0;
+    max-height: 360px;
+    & img {
+      margin-top: -39px;
+      // width: 100%;
+    }
+  }
+  &-bg {
+    position: absolute;
+    background-color: #ffe9c9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 185px 185px 0 0;
+    transform: translateY(10px) scaleX(1.07);
+  }
+  &-content {
+    &-title {
+      margin-bottom: 2px;
+      & a {
+        &:hover {
+          color: var(--mi-primary-color-2);
+        }
+      }
+    }
+  }
+}

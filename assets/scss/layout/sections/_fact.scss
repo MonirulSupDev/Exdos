@@ -1,0 +1,71 @@
+@use "../../utils/" as *;
+
+/*  3.12 Fact  */
+
+.mi-fact {
+  &-bg {
+    @media #{$md,$sm,$xs} {
+      margin-bottom: 60px !important;
+    }
+  }
+  &-item {
+    @media #{$lg,$md,$sm,$xs} {
+      text-align: center;
+    }
+    & p {
+      color: rgba($color: #fff, $alpha: 0.5);
+      font-size: 28px;
+    }
+  }
+  &-number {
+    font-size: 100px;
+    color: #fff;
+    @media #{$xs} {
+      font-size: 80px;
+    }
+  }
+}
+
+// Home 04
+.mi-fact4 {
+  &-area {
+    .mi-section-info ul li::before {
+      color: var(--mi-primary-color-2);
+    }
+  }
+  &-item {
+    @media #{$sm} {
+      justify-content: center;
+    }
+  }
+  &-icon {
+    border-right: 1px solid #d9d9d9;
+  }
+  &-content {
+    & h2 {
+      @media #{$lg} {
+        font-size: 80px;
+      }
+      @media #{$md} {
+        font-size: 55px;
+      }
+      @media #{$sm,$xs} {
+        font-size: 80px;
+      }
+    }
+    & h3 {
+      @media #{$xl} {
+        font-size: 27px;
+      }
+      @media #{$lg} {
+        font-size: 19px;
+      }
+      @media #{$md} {
+        font-size: 17px;
+      }
+      @media #{$sm,$xs} {
+        font-size: 24px;
+      }
+    }
+  }
+}

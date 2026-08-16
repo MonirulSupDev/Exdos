@@ -1,0 +1,122 @@
+@use "../utils/" as *;
+
+.myanimation {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  animation: rainbowColors 5s infinite;
+}
+
+@keyframes rainbowColors {
+  0% {
+    background-color: red;
+  }
+  15% {
+    background-color: orange;
+  }
+  30% {
+    background-color: yellow;
+  }
+  45% {
+    background-color: green;
+  }
+  60% {
+    background-color: blue;
+  }
+  75% {
+    background-color: indigo;
+  }
+  100% {
+    background-color: violet;
+  }
+}
+
+@keyframes pos {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100px;
+  }
+}
+
+.miFadeInUp {
+  animation: miFadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes miFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.miFadeInDown {
+  animation: miFadeInDown 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes miFadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.miFadeInLeft {
+  animation: miFadeInLeft 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes miFadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.miFadeInRight {
+  animation: miFadeInRight 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes miFadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.miSlideDown {
+  animation: miSlideDown 0.8s ease forwards;
+  opacity: 0;
+}
+
+@keyframes miSlideDown {
+  from {
+    opacity: 0;
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}

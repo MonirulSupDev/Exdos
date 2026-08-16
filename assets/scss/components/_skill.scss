@@ -1,0 +1,105 @@
+@use "../utils/" as *;
+
+/* 2.4 Skill */
+
+//* Progress bar:
+.miprogress {
+  & label {
+    background-color: var(--mi-theme-color);
+    margin-bottom: 15px;
+    padding: 7px 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #121018;
+    border-radius: 6px;
+    line-height: 1;
+    position: relative;
+    margin-left: 75%;
+    transform: translateX(-70%);
+    &::before {
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 5px;
+      border-style: solid;
+      border-width: 20px 10px 0px 10px;
+      border-color: var(--mi-theme-color) transparent transparent transparent;
+      transform: rotate(0deg);
+      bottom: -13px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+  // Bootstrap progress bar css customization:
+  & .progress,
+  & .progress-stacked {
+    --bs-progress-height: 8px;
+    --bs-progress-bg: rgba(18, 16, 24, 0.1);
+    --bs-progress-bar-bg: #ffcf4e;
+    border-radius: 6px;
+  }
+  & .progress-bar {
+    border-radius: 6px;
+  }
+  &-2 {
+    & label {
+      background: none;
+      margin-bottom: 0;
+      margin-left: 98%;
+      font-size: 16px;
+      letter-spacing: -0.02em;
+      color: #073d30;
+    }
+    ::before {
+      display: none;
+    }
+    & .progress,
+    .progress-stacked {
+      --bs-progress-height: 6px;
+      --bs-progress-bar-bg: #073d30;
+      --bs-progress-bg: #f1f1f1;
+    }
+  }
+}
+
+.mi-help-progress .progress,
+.mi-help-progress .progress-stacked {
+  --bs-progress-height: 10px;
+  --bs-progress-bg: rgba(248, 243, 231, 0.1);
+}
+
+// Circle progress bar
+.micharity__circle {
+  background-color: var(--mi-primary-color-2);
+  width: 90px;
+  height: 90px;
+  bottom: -45px;
+  right: 35px;
+}
+.progress-circle {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: conic-gradient(#fff 0% 84%, #377d71 84% 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+}
+
+.progress-circle::before {
+  content: "";
+  position: absolute;
+  width: 71px;
+  height: 71px;
+  background: #055c4d;
+  border-radius: 50%;
+}
+
+.progress-circle span {
+  position: absolute;
+  font-weight: bold;
+}

@@ -1,0 +1,36 @@
+@use "../utils/" as *;
+
+/* 2.2 Section Title */
+
+.mi-section {
+  &-info {
+    & ul {
+      margin-left: 0;
+      & li {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 15px;
+        &::before {
+          content: "\25CF";
+          color: var(--mi-primary-color);
+          margin-right: 6px;
+          font-size: 16px;
+        }
+      }
+    }
+    & p {
+      & br {
+        @media #{$xs,$sm,$xl} {
+          display: none;
+        }
+      }
+    }
+  }
+  &-title {
+    & br {
+      @media #{$sm,$xs} {
+        display: none;
+      }
+    }
+  }
+}

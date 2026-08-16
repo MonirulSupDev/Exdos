@@ -1,0 +1,28 @@
+@use "../../utils/" as *;
+
+/*  3.20 Pricing  */
+
+.mi-pricing {
+  &-area {
+    & .mi-section-info ul li::before {
+      color: var(--mi-primary-color-2);
+    }
+  }
+  &-card {
+    padding: 50px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: #fff6f1;
+    transition: all 0.3s ease;
+    &:hover {
+      border-color: var(--mi-body-color);
+    }
+  }
+  &-content {
+    & hr {
+      border: none;
+      height: 1px;
+      background: var(--mi-body-color);
+    }
+  }
+}

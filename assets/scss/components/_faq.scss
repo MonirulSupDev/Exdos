@@ -1,0 +1,83 @@
+@use "../utils/" as *;
+
+/* 2.3 Faq */
+
+.mi-faq {
+  &-area {
+    position: relative;
+    @media #{$md} {
+      margin-top: 60px !important;
+    }
+    @media #{$xs,$sm} {
+      margin-top: 50px !important;
+    }
+  }
+  &-img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+    @media #{$xxxl} {
+      transform: translate(-13%, -50%);
+    }
+    @media #{$xxl} {
+      transform: translate(-23%, -50%);
+    }
+    @media #{$xl} {
+      transform: translate(-35%, -50%);
+    }
+    @media #{$lg} {
+      transform: translate(-44%, -52%);
+    }
+    & img {
+      border-radius: 0 20px 20px 0;
+      width: 100%;
+    }
+  }
+  &-title {
+    @media #{$xl} {
+      font-size: 52px !important;
+    }
+    @media #{$lg} {
+      font-size: 43px !important;
+    }
+  }
+}
+
+// Bootstrap Accordion customizing
+.mi-accordion {
+  &-item {
+    border: 1px solid var(--mi-body-color);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 20px 30px;
+  }
+  &-body {
+    border-top: 1px solid var(--mi-body-color);
+    padding-top: 5px;
+    margin-top: 5px;
+  }
+  &-button {
+    position: relative;
+    padding-right: 30px;
+    &::after {
+      position: absolute;
+      content: "\f063";
+      font-family: "Font Awesome 5 Pro";
+      font-size: 20px;
+      color: var(--mi-primary-color);
+      right: 0;
+      top: 0;
+      transition: all 0.3s ease;
+    }
+    @media #{$xs} {
+      font-size: 22px;
+    }
+    &.collapsed {
+      &::after {
+        transform: rotate(180deg);
+        color: var(--mi-body-color);
+      }
+    }
+  }
+}

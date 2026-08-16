@@ -1,0 +1,272 @@
+@use "../../utils/" as *;
+
+/*  3.8 About  */
+
+// Home 01
+.mi-about {
+  &:first-child {
+    @media #{$md,$sm,$xs} {
+      margin-bottom: 50px;
+    }
+  }
+  &-bg {
+    background-size: cover;
+    padding-top: 130px;
+    padding-bottom: 230px;
+    @media #{$md} {
+      padding-bottom: 140px;
+    }
+    @media #{$sm} {
+      padding-top: 90px;
+    }
+    @media #{$sm,$xs} {
+      padding-bottom: 120px;
+    }
+  }
+  & img {
+    width: 100%;
+    border-radius: 20px;
+  }
+  &-content {
+    @media #{$xl,$lg} {
+      padding-left: 30px !important;
+    }
+    @media #{$md,$sm,$xs} {
+      padding-left: 0px !important;
+      margin-top: 30px !important;
+    }
+  }
+  &-video {
+    & a {
+      margin-right: 20px;
+      color: var(--mi-heading-color);
+      &:hover {
+        color: var(--mi-primary-color-2);
+      }
+    }
+    & span {
+      font-family: var(--mi-font-heading);
+      font-size: 30px;
+    }
+  }
+}
+// Home 02
+.mi-about2 {
+  &-bg {
+    padding-top: 130px;
+    padding-bottom: 150px;
+    @media #{$lg,$md} {
+      padding-top: 80px;
+      padding-bottom: 100px;
+    }
+    @media #{$xs,$sm} {
+      padding-top: 60px;
+      padding-bottom: 80px;
+    }
+    &-img {
+      content: "";
+      width: 100%;
+      height: 175%;
+      background-repeat: no-repeat;
+      background-size: 777px;
+      background-position: 7% 0;
+      @media #{$xxxl} {
+        background-size: 712px;
+      }
+      @media #{$xxl} {
+        background-size: 691px;
+        background-position: 5% 0;
+      }
+      @media #{$xl} {
+        background-size: 612px;
+        background-position: 0 0;
+        height: 137%;
+      }
+      @media #{$lg} {
+        height: 95%;
+        background-size: 451px;
+        background-position: 0 0;
+      }
+    }
+  }
+  &-content {
+    @media #{$xs} {
+      padding: 0 17px;
+    }
+  }
+  &-title {
+    @media #{$xxxl} {
+      padding-left: 110px;
+    }
+    @media #{$xxl} {
+      padding-left: 148px;
+    }
+    @media #{$xl} {
+      padding-left: 88px;
+    }
+    @media #{$lg} {
+      padding-left: 45px;
+    }
+    @media #{$xs} {
+      margin-bottom: 20px;
+    }
+    & .mi-services-title {
+      @media #{$xxxl} {
+        font-size: 50px;
+      }
+      @media #{$xxl} {
+        font-size: 47px;
+      }
+      @media #{$xl} {
+        font-size: 44px;
+      }
+      @media #{$lg} {
+        font-size: 42px;
+      }
+    }
+  }
+  &-list {
+    @media #{$lg,$md} {
+      font-size: 23px;
+    }
+    @media #{$xs} {
+      font-size: 21px;
+    }
+  }
+}
+
+// Home 03
+.mi-about3 {
+  &-area {
+    & .mi-section-info ul li::before {
+      color: var(--mi-primary-color-2);
+    }
+    & .mi-accordion-body {
+      border-top: none;
+    }
+    & .mi-accordion-item {
+      border: 0;
+      border-bottom: 1px solid #d9d9d9;
+      border-radius: 0;
+      padding: 20px 0;
+    }
+    & .mi-accordion-button {
+      &::after {
+        position: absolute;
+        content: "\f068";
+        font-family: "Font Awesome 5 Pro";
+        font-size: 19px;
+        line-height: 1.5;
+        font-weight: 300;
+        color: var(--mi-primary-color-2);
+        right: 0;
+        top: 0;
+        transition: all 0.3s ease;
+      }
+    }
+    & .mi-accordion-button.collapsed {
+      &::after {
+        content: "\f067";
+        color: var(--mi-heading-color);
+      }
+    }
+  }
+  &-img {
+    & img {
+      width: 100%;
+    }
+  }
+}
+
+// Home 04
+.mi-about4 {
+  &-area {
+    border-radius: 358px;
+    @media #{$xxl} {
+      border-radius: 350px;
+      margin-left: 25px !important;
+      margin-right: 25px !important;
+    }
+    @media #{$xl} {
+      margin-left: 10px !important;
+      margin-right: 10px !important;
+    }
+    @media #{$lg} {
+      border-radius: 274px;
+      margin-left: 10px !important;
+      margin-right: 10px !important;
+    }
+    @media #{$md} {
+      border-radius: 35px;
+      margin-left: 20px !important;
+      margin-right: 20px !important;
+    }
+    @media #{$xs,$sm} {
+      border-radius: 35px;
+      margin-left: 10px !important;
+      margin-right: 10px !important;
+    }
+    & .mi-section-info ul li::before {
+      color: var(--mi-primary-color-2);
+    }
+  }
+  &-content {
+    & h2 {
+      font-size: 43px !important;
+    }
+    & .list {
+      font-size: 27px;
+      @media #{$xs} {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+// Home 05
+.mi-about5 {
+  &-area {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    @media #{$xs} {
+      padding-top: 70px !important;
+      padding-bottom: 70px !important;
+    }
+    @media #{$sm} {
+      padding-top: 80px !important;
+      padding-bottom: 80px !important;
+    }
+    & .mi-section-info ul li::before {
+      color: var(--mi-secondary-color);
+    }
+  }
+  &-text {
+    line-height: 50px;
+    @media #{$md} {
+      font-size: 30px !important;
+    }
+    @media #{$xs} {
+      font-size: 15px !important;
+      line-height: 35px;
+    }
+  }
+  &-author {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: var(--mi-secondary-color);
+      width: 1px;
+      height: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 111%;
+    }
+    & h3 {
+      @media #{$xs} {
+        font-size: 25px !important;
+      }
+    }
+  }
+}

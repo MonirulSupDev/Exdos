@@ -1,0 +1,58 @@
+@use "../../utils/" as *;
+
+/*  3.9 Causes  */
+
+.mi-causes {
+  &-area {
+    & .mi-section-info ul li::before {
+      color: var(--mi-primary-color-2);
+    }
+    & .mi-accordion-item {
+      border: 0;
+      border-bottom: 1px solid #d9d9d9;
+      border-radius: 0;
+      padding: 20px 0;
+    }
+    & .mi-accordion-body {
+      border-top: none;
+    }
+    & .mi-accordion-button::after {
+      position: absolute;
+      content: "\f068";
+      font-family: "Font Awesome 5 Pro";
+      font-size: 19px;
+      line-height: 1.5;
+      font-weight: 300;
+      color: var(--mi-primary-color-2);
+      right: 0;
+      top: 0;
+      transition: all 0.3s ease;
+    }
+    & .mi-accordion-button.collapsed::after {
+      content: "\f067";
+      color: var(--mi-heading-color);
+    }
+    & .mi-accordion-button.collapsed::after {
+      transform: rotate(180deg);
+      color: var(--mi-body-color);
+    }
+  }
+  &-content {
+    padding-left: 285px;
+    @media #{$xxxl} {
+      padding-left: 265px;
+    }
+    @media #{$xxl} {
+      padding-left: 165px;
+    }
+    @media #{$xl} {
+      padding-left: 116px;
+    }
+    @media #{$lg} {
+      padding-left: 30px;
+    }
+    @media #{$md,$sm,$xs} {
+      padding: 0 10px;
+    }
+  }
+}

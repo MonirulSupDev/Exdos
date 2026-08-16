@@ -1,0 +1,53 @@
+@use "../utils/" as *;
+
+/* 2.5 Tabs */
+
+.mi-nav-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid rgba(18, 16, 24, 0.1);
+  border-radius: 12px;
+  @media #{$xs} {
+    margin-bottom: 35px;
+  }
+  & button {
+    width: 33.33%;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #121018;
+    padding: 11px 0;
+    border-radius: 12px;
+    @media #{$xs} {
+      width: 100%;
+    }
+    &.active {
+      background-color: var(--mi-theme-color);
+    }
+  }
+}
+.mi-tab {
+  &-area {
+    @media #{$md} {
+      padding-top: 90px !important;
+      padding-bottom: 60px !important;
+    }
+    @media #{$xs} {
+      padding-top: 75px !important;
+      padding-bottom: 60px !important;
+    }
+  }
+  &-wrapper {
+    @media #{$lg,$xs} {
+      margin-top: 0 !important;
+    }
+    @media #{$xs} {
+      text-align: center;
+    }
+  }
+  &-img {
+    @media #{$xl,$md,$xs} {
+      padding-left: 0 !important;
+    }
+  }
+}

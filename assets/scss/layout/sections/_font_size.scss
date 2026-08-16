@@ -1,0 +1,109 @@
+@use "../../utils/" as *;
+
+//font size
+.fns {
+  &-12 {
+    font-size: 12px;
+  }
+  &-13 {
+    font-size: 13px;
+  }
+  &-15 {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  &-16 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &-18 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  &-20 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  &-22 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  &-24 {
+    font-size: 24px;
+    @media #{$md} {
+      font-size: 18px;
+    }
+    @media #{$xs} {
+      font-size: 12px;
+    }
+  }
+  &-26 {
+    font-size: 26px;
+    @media #{$lg,$md,$xl,$xs} {
+      font-size: 21px;
+    }
+  }
+  &-30 {
+    font-size: 30px;
+  }
+  &-34 {
+    font-size: 34px;
+  }
+  &-36 {
+    font-size: 36px;
+  }
+  &-40 {
+    font-size: 40px;
+    @media #{$xs} {
+      font-size: 30px;
+    }
+    @media #{$lg} {
+      font-size: 35px;
+    }
+  }
+  &-45 {
+    font-size: 45px;
+  }
+  &-50 {
+    font-size: 50px;
+  }
+  &-55 {
+    font-size: 55px;
+  }
+  &-70 {
+    font-size: 70px;
+  }
+  &-60 {
+    font-size: 60px;
+    @media #{$xl} {
+      font-size: 54px;
+    }
+    @media #{$lg} {
+      font-size: 50px;
+    }
+    @media #{$md,$sm} {
+      font-size: 40px;
+    }
+    @media #{$xs} {
+      font-size: 32px;
+    }
+  }
+  &-80 {
+    font-size: 80px;
+    @media #{$lg} {
+      font-size: 60px;
+    }
+    @media #{$md} {
+      font-size: 50px;
+    }
+    @media #{$xs} {
+      font-size: 45px;
+    }
+  }
+  &-100 {
+    font-size: 100px;
+  }
+  &-110 {
+    font-size: 110px;
+  }
+}

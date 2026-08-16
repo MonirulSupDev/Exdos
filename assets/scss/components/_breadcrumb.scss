@@ -1,0 +1,41 @@
+@use "../utils/" as *;
+
+/* 2.6 Breadcrumb */
+
+.mi-breadcrumb {
+  &-bg {
+    background-size: cover;
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: rgba(0, 0, 0, 0.4);
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-title {
+    font-size: 84px;
+    letter-spacing: 1.68px;
+    @media #{$md} {
+      font-size: 45px;
+    }
+    @media #{$xs} {
+      font-size: 37px;
+    }
+    @media #{$lg} {
+      font-size: 55px;
+    }
+  }
+  &-list {
+    & span {
+      font-size: 18px;
+      font-weight: 500;
+      color: #fff;
+      &.active {
+        color: var(--mi-theme-color);
+      }
+    }
+  }
+}

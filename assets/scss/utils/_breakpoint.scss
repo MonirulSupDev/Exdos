@@ -1,0 +1,25 @@
+//* Responsive Variables:-->>>
+
+// Extra Small (Phones)
+$xs: "only screen and (max-width: 575px)";
+
+// Small (Large Phones)
+$sm: "only screen and (min-width: 576px) and (max-width: 767px)";
+
+// Medium (Tablets)
+$md: "only screen and (min-width: 768px) and (max-width: 991px)";
+
+// Large (Small Laptops)
+$lg: "only screen and (min-width: 992px) and (max-width: 1199px)";
+
+// Extra Large (Laptops & Desktops)
+$xl: "only screen and (min-width: 1200px) and (max-width: 1399px)";
+
+// Extra Extra Large (Large Desktops)
+$xxl: "only screen and (min-width: 1400px) and (max-width: 1599px)";
+
+// 2K Monitors
+$xxxl: "only screen and (min-width: 1600px) and (max-width: 1919px)";
+
+// Full HD and Above
+$fhd: "only screen and (min-width: 1920px)";

@@ -1,0 +1,45 @@
+@use "../utils/" as *;
+
+/* 2.7 Pagination */
+
+.mi-pagination {
+  & ul {
+    & li {
+      display: inline-block;
+      text-align: center;
+      @media #{$xs} {
+        margin-right: 0 !important;
+      }
+      & a {
+        display: block;
+        width: 50px;
+        height: 50px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 3.6;
+        border-radius: 50%;
+        @include mi-transition();
+      }
+      &.current,
+      &:hover {
+        & a {
+          background-color: var(--mi-secondary-color);
+          color: #fff;
+        }
+      }
+    }
+  }
+  &-2 {
+    & ul {
+      & li {
+        &.current,
+        &:hover {
+          & a {
+            background-color: var(--mi-primary-color);
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
