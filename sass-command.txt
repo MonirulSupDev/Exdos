@@ -1,1 +1,1 @@
-sass --watch "C:\Users\Monirul\Desktop\Selim Rana Course\Exdos\assets\scss\main.scss":"C:\Users\Monirul\Desktop\Selim Rana Course\Exdos\assets\css\style.css"
+sass --watch assets/scss/main.scss:assets/css/style.min.css --style=compressed
