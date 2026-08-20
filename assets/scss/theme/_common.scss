@@ -36,9 +36,6 @@
 }
 
 // Background color
-.bg-grey {
-  background-color: var(--mi-grey-color);
-}
 .bg-theme {
   background-color: var(--mi-theme-color) !important;
 }
@@ -51,17 +48,8 @@
 
 // Border radius
 .br {
-  &-12 {
-    border-radius: 12px !important;
-  }
-  &-16 {
-    border-radius: 16px !important;
-  }
   &-20 {
     border-radius: 20px !important;
-  }
-  &-30 {
-    border-radius: 30px !important;
   }
 }
 
@@ -77,69 +65,6 @@
 .z-index-1 {
   z-index: 1;
   position: relative;
-}
-.z-index-2 {
-  z-index: 2;
-  position: relative;
-}
-.z-index-3 {
-  z-index: 3;
-  position: relative;
-}
-.z-index-11 {
-  z-index: 11;
-  position: relative;
-}
-
-// height
-.mi-h-630 {
-  min-height: 630px;
-}
-
-// Line height
-.lh {
-  &-24 {
-    line-height: 24px;
-  }
-  &-50 {
-    line-height: 50px;
-  }
-}
-
-// Letter spacing
-.ls {
-  &-004 {
-    letter-spacing: -0.04em;
-  }
-  &-002 {
-    letter-spacing: -0.02em;
-  }
-  &-inherit {
-    letter-spacing: inherit;
-  }
-}
-// Container
-.container {
-  &-1400 {
-    max-width: 1430px;
-    margin: 0 auto;
-    padding: 0 15px;
-    @media #{$xs} {
-      padding-top: 50px;
-      padding-bottom: 20px;
-    }
-    @media #{$md} {
-      padding-top: 45px;
-    }
-    &-br {
-      @media #{$lg,$md,$xs} {
-        border-radius: 0 !important;
-      }
-      @media #{$xl} {
-        margin: 0 30px !important;
-      }
-    }
-  }
 }
 
 .no-hover {

@@ -69,8 +69,6 @@
 
 /* 1.1 Theme Default */
 
-@import url($font-url);
-
 body {
   font-family: var(--mi-font-body);
   font-size: 17px;
@@ -173,9 +171,8 @@ p,
 input,
 select,
 textarea,
-li,
-.transition-3 {
-  @include mi-transition(0.3s);
+li {
+  transition: all 0.3s ease;
 }
 
 a:not([href]):not([class]),
@@ -233,10 +230,10 @@ textarea {
   padding: 0 20px;
   background-color: transparent;
   border-bottom: 1px solid var(--mi-body-color);
-  @include mi-placeholder {
+  transition: all 0.3s ease;
+  ::placeholder {
     color: #85838b;
   }
-  @include mi-transition();
   &:focus {
     border-color: var(--mi-body-color);
     box-shadow: none;

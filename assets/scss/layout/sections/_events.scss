@@ -18,7 +18,7 @@
 .mievents {
   padding: 25px 0;
   margin-bottom: 12px;
-  @include mi-transition(0.6s);
+  transition: all 0.6s ease;
   &__date {
     padding: 0 30px;
     border-right: 1px solid rgba(18, 16, 24, 0.1);

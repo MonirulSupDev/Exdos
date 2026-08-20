@@ -7,11 +7,32 @@
     <meta name="description" content="It is an Expert advertising solutions to elevate your brand">
     <title>Exdos - Home-02</title>
     <link rel="icon" type="image/x-icon" href="assets/img/fav/fav.png" />
+
+    <!--* Google Fonts -->
+    <!-- Establish early connection to font servers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Load optimized font asynchronously -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Federo&display=swap"
+        media="print" onload="this.media='all'">
+
+    <!-- Defer non-critical stylesheets -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="assets/css/fontawesome-pro.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" media="print" onload="this.media='all'" />
+
+    <!-- Fallback for users with JavaScript disabled -->
+    <noscript>
+        <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/css/fontawesome-pro.css" />
+        <link rel="stylesheet" href="assets/css/animate.min.css" />
+    </noscript>
+
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/fontawesome-pro.css" />
-    <link rel="stylesheet" href="assets/css/animate.min.css" />
     <link rel="stylesheet" href="assets/css/style.min.css" />
 </head>
 
@@ -36,7 +57,7 @@
             <div class="mi-header-wrapper d-flex justify-content-between">
                 <div class="mi-header-left d-flex align-items-center">
                     <div class="mi-header-logo mi-header-logo-2">
-                        <a href="index.html"><img src="assets/img/logos/header-logo.png" alt="" /></a>
+                        <a href="index.html"><img src="assets/img/logos/header-logo.png" alt="Header logo" /></a>
                     </div>
                     <div class="mi-menu mi-menu-2 d-none d-xl-block">
                         <nav>
@@ -143,31 +164,12 @@
                 </a>
             </div>
             <div class="mi-offcanvas-close">
-                <button class="mi-offcanvas-close-button">
-                    <i class="fal fa-times"></i>
+                <button class="mi-offcanvas-close-button" aria-label="Close offcanvas">
+                    <i aria-hidden="true" class="fal fa-times"></i>
                 </button>
             </div>
         </div>
         <div class="mi-offcanvas-content">
-            <div class="d-none d-xl-block">
-                <h2 class="fnw-400 text-white">Hello There !</h2>
-                <p>
-                    The morning sun slowly rose above the hills, casting a warm golden light across the quiet village.
-                </p>
-                <div class="mi-offcanvas-gallery d-flex mt-50">
-                    <img class="w-100" src="assets/img/gallery/gallery-01.jpg" alt="">
-                    <img class="w-100" src="assets/img/gallery/gallery-02.jpg" alt="">
-                    <img class="w-100" src="assets/img/gallery/gallery-03.jpg" alt="">
-                </div>
-                <div class="mi-team-social mt-50">
-                    <h3 class="fnw-400 text-white mb-20">Fllow Us on :</h3>
-                    <ul class="list-unstyled d-flex">
-                        <li class="mr-20"><a href="#"><i class="fab fa-behance"></i></a></li>
-                        <li class="mr-20"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
             <!-- Menu for small devices -->
             <div class="mi-offcanvas-menu d-xl-none"></div>
         </div>
@@ -178,7 +180,7 @@
     <main>
         <!-- Hero area start -->
         <section class="mi-hero-area overflow-hidden">
-            <div class="mi-hero-bg" data-bg-img="assets/img/bg/hero-02-bg.jpg">
+            <div class="mi-hero-bg" data-bg-img="assets/img/bg/hero-02-bg.jpg" fetchpriority="high">
                 <div class="mi-hero-left mi-hero-left-2 d-none d-sm-flex">
                     <div class="mi-hero-left-trust text-uppercase fnw-500">
                         2k+ company trust us
@@ -200,7 +202,8 @@
                                 </h1>
                                 <div class="shape-wrapper d-flex align-items-center wow animate__animated animate__fadeInUp"
                                     data-wow-duration="2s" data-wow-delay="0.5s">
-                                    <img src="assets/img/shapes/hero-02-shape.png" alt="" class="hero-02-shape" />
+                                    <img src="assets/img/shapes/hero-02-shape.png" alt="Hero 2 shape"
+                                        class="hero-02-shape" />
                                     <h1 class="fns-100 d-inline-block">of unique</h1>
                                 </div>
                                 <h1 class="fns-100 d-inline-block wow animate__animated animate__fadeInUp"
@@ -209,17 +212,18 @@
                                 </h1>
                                 <div class="mi-hero-btn d-flex align-items-center mt-30 wow animate__animated animate__fadeInUp"
                                     data-wow-duration="2s" data-wow-delay="1s">
-                                    <h3 class="text-uppercase fns-30 fnw-400 m-0" data-color="#b1b4ba">
+                                    <h2 class="text-uppercase fns-30 fnw-400 m-0" data-color="#b1b4ba">
                                         Expert advertising solutions <br />to elevate your brand
-                                    </h3>
-                                    <a href="#"><img src="assets/img/icons/hero-02-arrow.png" alt="" /></a>
+                                    </h2>
+                                    <a href="#"><img src="assets/img/icons/hero-02-arrow.png"
+                                            alt="Hero arrow button" /></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-5 offset-lg-1 col-xl-5 offset-xl-0 px-0">
                             <div class="mi-hero-img mt-100 d-none d-lg-block" data-margin-left="-27px">
                                 <img class="w-100 wow animate__animated animate__fadeIn" data-wow-duration="3s"
-                                    src="assets/img/hero/hero-02.png" alt="" />
+                                    src="assets/img/hero/hero-02.png" alt="Hero 2 bg image" fetchpriority="high" />
                             </div>
                         </div>
                     </div>
@@ -388,14 +392,14 @@
                                     scelerisque etiam
                                 </p>
                                 <ul class="list-unstyled fns-30 mi-heading-font" data-color="#0a0e1a">
-                                    <div class="mi-about2-list d-flex mb-15">
+                                    <li class="mi-about2-list d-flex mb-15">
                                         <i class="far fa-check"></i>
-                                        <li class="ml-10">Leading in ad innovation</li>
-                                    </div>
-                                    <div class="mi-about2-list d-flex">
+                                        <div class="ml-10">Leading in ad innovation</div>
+                                    </li>
+                                    <li class="mi-about2-list d-flex">
                                         <i class="far fa-check"></i>
-                                        <li class="ml-10">Pioneers in progressive advertising</li>
-                                    </div>
+                                        <div class="ml-10">Pioneers in progressive advertising</div>
+                                    </li>
                                 </ul>
                                 <div class="mi-about-btn mt-60">
                                     <a class="mi-btn mi-btn-blue text-capitalize" href="#">discover more</a>
@@ -582,18 +586,19 @@
                         <div class="mi-team2-card mb-30">
                             <div class="mi-team2-card-img-wrapper">
                                 <div class="mi-team2-card-img mb-25">
-                                    <a href="#"><img src="assets/img/team/team-02-01.jpg" alt="" /></a>
+                                    <a href="#"><img src="assets/img/team/team-02-01.jpg"
+                                            alt="Team member image 01" /></a>
                                 </div>
                                 <div class="mi-team-social mi-team2-social">
                                     <ul class="list-unstyled d-flex justify-content-center">
                                         <li class="mr-20">
-                                            <a href="#"><i class="fab fa-behance"></i></a>
+                                            <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
                                         </li>
                                         <li class="mr-20">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -610,18 +615,19 @@
                         <div class="mi-team2-card mb-30">
                             <div class="mi-team2-card-img-wrapper">
                                 <div class="mi-team2-card-img mb-25">
-                                    <a href="#"><img src="assets/img/team/team-02-02.jpg" alt="" /></a>
+                                    <a href="#"><img src="assets/img/team/team-02-02.jpg"
+                                            alt="Team member image 02" /></a>
                                 </div>
                                 <div class="mi-team-social mi-team2-social">
                                     <ul class="list-unstyled d-flex justify-content-center">
                                         <li class="mr-20">
-                                            <a href="#"><i class="fab fa-behance"></i></a>
+                                            <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
                                         </li>
                                         <li class="mr-20">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -638,18 +644,19 @@
                         <div class="mi-team2-card mb-30">
                             <div class="mi-team2-card-img-wrapper">
                                 <div class="mi-team2-card-img mb-25">
-                                    <a href="#"><img src="assets/img/team/team-02-03.jpg" alt="" /></a>
+                                    <a href="#"><img src="assets/img/team/team-02-03.jpg"
+                                            alt="Team member image 03" /></a>
                                 </div>
                                 <div class="mi-team-social mi-team2-social">
                                     <ul class="list-unstyled d-flex justify-content-center">
                                         <li class="mr-20">
-                                            <a href="#"><i class="fab fa-behance"></i></a>
+                                            <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
                                         </li>
                                         <li class="mr-20">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -666,18 +673,19 @@
                         <div class="mi-team2-card mb-30">
                             <div class="mi-team2-card-img-wrapper">
                                 <div class="mi-team2-card-img mb-25">
-                                    <a href="#"><img src="assets/img/team/team-02-04.jpg" alt="" /></a>
+                                    <a href="#"><img src="assets/img/team/team-02-04.jpg"
+                                            alt="Team member image 04" /></a>
                                 </div>
                                 <div class="mi-team-social mi-team2-social">
                                     <ul class="list-unstyled d-flex justify-content-center">
                                         <li class="mr-20">
-                                            <a href="#"><i class="fab fa-behance"></i></a>
+                                            <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
                                         </li>
                                         <li class="mr-20">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1174,8 +1182,8 @@
                             <div class="mi-newsletter-input mi-newsletter-input-2">
                                 <h3 class="mi-newsletter-back-title mi-newsletter-back-title-2 fns-70"
                                     data-color="#eeebe6">Newsletter</h3>
-                                <label data-color="#57595c">Email Here*</label>
-                                <input type="email" data-border-color="#57595c" data-color="#57595c" />
+                                <label for="email" data-color="#57595c">Email Here*</label>
+                                <input id="email" type="email" data-border-color="#57595c" data-color="#57595c" />
                                 <img src="assets/img/icons/send-icon-black.png" alt="" />
                             </div>
                             <button type="submit" class="mi-btn mi-btn-blue ml-10 flex-shrink-0" href="#">

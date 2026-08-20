@@ -18,7 +18,7 @@
         font-weight: 500;
         line-height: 3.6;
         border-radius: 50%;
-        @include mi-transition();
+        transition: all 0.3s ease;
       }
       &.current,
       &:hover {
