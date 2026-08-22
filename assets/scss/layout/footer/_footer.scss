@@ -180,7 +180,7 @@
         & p,
         a,
         span {
-          color: var(--mi-grey-color);
+          color: #fff;
         }
         & ul {
           & li {
@@ -308,7 +308,7 @@
     }
     &-5 {
       & p {
-        color: var(--mi-grey-color);
+        color: #fff;
         & a {
           color: var(--mi-secondary-color);
         }
@@ -368,7 +368,7 @@
       & ul {
         & li {
           & a {
-            color: var(--mi-grey-color);
+            color: #fff;
             text-transform: uppercase;
             &:hover {
               color: var(--mi-secondary-color);

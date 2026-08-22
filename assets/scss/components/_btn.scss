@@ -9,6 +9,7 @@
   padding: 24px 46px;
   border-radius: 5px;
   font-size: 18px;
+  font-weight: 500;
   line-height: 22px;
   position: relative;
   &::after {
@@ -130,7 +131,6 @@
   }
   &-secondary {
     background-color: var(--mi-secondary-color);
-    color: #fff;
     padding: 19px 33px;
     & i {
       transition: all 0.3s ease;
