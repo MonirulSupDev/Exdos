@@ -194,6 +194,11 @@
         }
       }
       & .mi-hero-btn {
+        & h2 {
+          @media #{$xl} {
+            font-size: 24px !important;
+          }
+        }
         & h3 {
           font-size: 24px;
           line-height: 40px;
@@ -207,7 +212,7 @@
         }
       }
       & a {
-        margin-left: 37px !important;
+        margin-left: 40px !important;
         @media #{$lg} {
           margin-left: 20px !important;
         }
