@@ -195,38 +195,45 @@
         }
       }
     }
-    & .mi-newsletter-input input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    input[type="number"],
-    input[type="password"],
-    input[type="url"] {
-      border-bottom: 1px solid var(--mi-body-color);
-      color: var(--mi-body-color);
-      height: 50px;
-      padding-left: 92px;
-      &:focus {
-        border-color: var(--mi-body-color);
+    & .mi-newsletter-input {
+      & input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="number"],
+      input[type="password"],
+      input[type="url"] {
+        border-bottom: 1px solid var(--mi-body-color);
+        color: var(--mi-body-color);
+        height: 50px;
+        padding-left: 92px;
+        &:focus {
+          border-color: var(--mi-body-color);
+        }
       }
-    }
-    & .mi-newsletter-input label {
-      color: var(--mi-body-color);
-      text-transform: uppercase;
-    }
-    & .mi-newsletter-input button {
-      right: 0;
-      &:hover {
-        color: var(--mi-primary-color-2) !important;
-      }
-    }
-    & .mi-newsletter-input-5 {
-      @media #{$lg} {
-        width: 100%;
+      & label {
+        color: var(--mi-body-color);
+        text-transform: uppercase;
       }
       & button {
+        right: 0;
+        padding: 5px 20px;
         &:hover {
-          color: var(--mi-secondary-color) !important;
+          color: var(--mi-primary-color-2) !important;
         }
+      }
+      &-5 {
+        @media #{$lg} {
+          width: 100%;
+        }
+        & button {
+          padding: 5px 15px;
+          &:hover {
+            color: var(--mi-secondary-color) !important;
+          }
+        }
+      }
+      &-footer {
+        width: 100%;
       }
     }
     & .mi-team-social ul li a {
@@ -285,7 +292,7 @@
     }
     &-2 {
       & p {
-        color: var(--mi-body-color);
+        color: var(--mi-heading-color);
         & a {
           color: var(--mi-primary-color-2);
         }
@@ -335,7 +342,7 @@
             font-size: 15px;
           }
           & a {
-            color: var(--mi-body-color);
+            color: var(--mi-heading-color);
             text-transform: uppercase;
             &:hover {
               color: var(--mi-primary-color-2);

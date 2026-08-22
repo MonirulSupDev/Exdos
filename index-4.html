@@ -59,7 +59,7 @@
             <div class="mi-header-wrapper mi-header-wrapper-4 d-flex justify-content-between">
                 <div class="mi-header-left d-flex align-items-center">
                     <div class="mi-header-logo mi-header-logo-4">
-                        <a href="index.html"><img src="assets/img/logos/header-logo-black.png" alt="" /></a>
+                        <a href="index.html"><img src="assets/img/logos/header-logo-black.png" alt="Header logo" /></a>
                     </div>
                     <div class="mi-menu mi-menu-4 d-none d-lg-block">
                         <nav>
@@ -96,7 +96,7 @@
                     <div
                         class="mi-header-search mi-header-search-3 mi-header-search-4 d-flex align-items-center d-none d-sm-flex">
                         <div class="search-wrapper">
-                            <button id="searchBtn" class="search-btn">
+                            <button id="searchBtn" class="search-btn" aria-label="Search button">
                                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -119,7 +119,7 @@
                         </a>
                     </div>
                     <div class="mi-header-offcanvas mi-header-offcanvas-4 d-flex d-lg-none align-items-center">
-                        <button>
+                        <button aria-label="Offcanvas button">
                             <svg width="54" height="26" viewBox="0 0 54 26" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -146,31 +146,12 @@
                 </a>
             </div>
             <div class="mi-offcanvas-close">
-                <button class="mi-offcanvas-close-button">
-                    <i class="fal fa-times"></i>
+                <button class="mi-offcanvas-close-button" aria-label="Offcanvas close button">
+                    <i aria-hidden="true" class="fal fa-times"></i>
                 </button>
             </div>
         </div>
         <div class="mi-offcanvas-content">
-            <div class="d-none d-xl-block">
-                <h2 class="fnw-400 text-white">Hello There !</h2>
-                <p>
-                    The morning sun slowly rose above the hills, casting a warm golden light across the quiet village.
-                </p>
-                <div class="mi-offcanvas-gallery d-flex mt-50">
-                    <img class="w-100" src="assets/img/gallery/gallery-01.jpg" alt="">
-                    <img class="w-100" src="assets/img/gallery/gallery-02.jpg" alt="">
-                    <img class="w-100" src="assets/img/gallery/gallery-03.jpg" alt="">
-                </div>
-                <div class="mi-team-social mt-50">
-                    <h3 class="fnw-400 text-white mb-20">Fllow Us on :</h3>
-                    <ul class="list-unstyled d-flex">
-                        <li class="mr-20"><a href="#"><i class="fab fa-behance"></i></a></li>
-                        <li class="mr-20"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
             <!-- Menu for small devices -->
             <div class="mi-offcanvas-menu d-xl-none"></div>
         </div>
@@ -212,7 +193,8 @@
                                 </p>
                                 <div class="mi-hero4-btn mt-60 wow animate__animated animate__fadeInUp"
                                     data-wow-duration="2s" data-wow-delay="1s">
-                                    <a class="mi-btn mi-btn-blue-arrow text-capitalize" href="#">
+                                    <a class="mi-btn mi-btn-blue-arrow text-capitalize" href="#"
+                                        aria-label="Hero button">
                                         discover more &nbsp;<i class="far fa-arrow-up"></i>
                                     </a>
                                 </div>
@@ -363,14 +345,14 @@
                                     dapibus</span> scelerisque etiam
                             </p>
                             <ul class="list-unstyled fns-30 mi-heading-font" data-color="#0a0e1a">
-                                <div class="list d-flex mb-15">
+                                <li class="list d-flex mb-15">
                                     <i class="far fa-check"></i>
-                                    <li class="ml-10">Leading in ad innovation</li>
-                                </div>
-                                <div class="list d-flex">
+                                    <div class="ml-10">Leading in ad innovation</div>
+                                </li>
+                                <li class="list d-flex">
                                     <i class="far fa-check"></i>
-                                    <li class="ml-10">Pioneers in progressive advertising</li>
-                                </div>
+                                    <div class="ml-10">Pioneers in progressive advertising</div>
+                                </li>
                             </ul>
                             <div class="mi-about4-btn mt-60">
                                 <a class="mi-btn mi-btn-blue-arrow text-capitalize" href="#">
@@ -432,7 +414,8 @@
                         <div class="swiper-slide">
                             <div class="mi-project4-card">
                                 <div class="mi-project4-img">
-                                    <a href="#"><img src="assets/img/projects/project-04-01.jpg" alt=""></a>
+                                    <a href="#"><img src="assets/img/projects/project-04-01.jpg"
+                                            alt="Project image 01"></a>
                                 </div>
                                 <div class="mi-project4-content pt-20 pl-30">
                                     <a href="#" class="mi-project4-cat text-uppercase fns-16" data-color="#57595C">
@@ -449,7 +432,8 @@
                         <div class="swiper-slide">
                             <div class="mi-project4-card" data-bg-color="#D6F0FF">
                                 <div class="mi-project4-img">
-                                    <a href="#"><img src="assets/img/projects/project-04-02.jpg" alt=""></a>
+                                    <a href="#"><img src="assets/img/projects/project-04-02.jpg"
+                                            alt="Project image 02"></a>
                                 </div>
                                 <div class="mi-project4-content pt-20 pl-30">
                                     <a href="#" class="mi-project4-cat text-uppercase fns-16" data-color="#57595C">
@@ -466,7 +450,8 @@
                         <div class="swiper-slide">
                             <div class="mi-project4-card" data-bg-color="#FFE4FB">
                                 <div class="mi-project4-img">
-                                    <a href="#"><img src="assets/img/projects/project-04-03.jpg" alt=""></a>
+                                    <a href="#"><img src="assets/img/projects/project-04-03.jpg"
+                                            alt="Project image 03"></a>
                                 </div>
                                 <div class="mi-project4-content pt-20 pl-30">
                                     <a href="#" class="mi-project4-cat text-uppercase fns-16" data-color="#57595C">
@@ -483,7 +468,8 @@
                         <div class="swiper-slide">
                             <div class="mi-project4-card" data-bg-color="#E2EAD7">
                                 <div class="mi-project4-img">
-                                    <a href="#"><img src="assets/img/projects/project-04-04.jpg" alt=""></a>
+                                    <a href="#"><img src="assets/img/projects/project-04-04.jpg"
+                                            alt="Project image 04"></a>
                                 </div>
                                 <div class="mi-project4-content pt-20 pl-30">
                                     <a href="#" class="mi-project4-cat text-uppercase fns-16" data-color="#57595C">
@@ -500,7 +486,8 @@
                         <div class="swiper-slide">
                             <div class="mi-project4-card" data-bg-color="#D6F0FF">
                                 <div class="mi-project4-img">
-                                    <a href="#"><img src="assets/img/projects/project-04-02.jpg" alt=""></a>
+                                    <a href="#"><img src="assets/img/projects/project-04-02.jpg"
+                                            alt="Project image 02"></a>
                                 </div>
                                 <div class="mi-project4-content pt-20 pl-30">
                                     <a href="#" class="mi-project4-cat text-uppercase fns-16" data-color="#57595C">
@@ -589,7 +576,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="mi-services4-card border-0 bg-white mb-30">
                             <div class="mi-services-icon mb-25">
-                                <img src="assets/img/icons/services-icon-04-04.png" alt="">
+                                <img src="assets/img/icons/services-icon-04-04.png" alt="Service icon 01">
                             </div>
                             <div class="mi-section-info">
                                 <h2 class="mi-section-title fnw-400 fns-30 mb-15">
@@ -598,7 +585,7 @@
                                 <p class="mb-15">Perfs so ultrices sollicitudin iaculis platea facilis</p>
                             </div>
                             <div class="mi-services4-btn mt-20">
-                                <a href="#">
+                                <a href="#" aria-label="Service button icon">
                                     <svg width="45" height="19" viewBox="0 0 45 19" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -612,7 +599,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="mi-services4-card border-0 bg-white mb-30">
                             <div class="mi-services-icon mb-25">
-                                <img src="assets/img/icons/services-icon-04-01.png" alt="">
+                                <img src="assets/img/icons/services-icon-04-01.png" alt="Service icon 02">
                             </div>
                             <div class="mi-section-info">
                                 <h2 class="mi-section-title fnw-400 fns-30 mb-15">
@@ -621,7 +608,7 @@
                                 <p class="mb-15">Perfs so ultrices sollicitudin iaculis platea facilis</p>
                             </div>
                             <div class="mi-services4-btn mt-20">
-                                <a href="#">
+                                <a href="#" aria-label="Service button icon">
                                     <svg width="45" height="19" viewBox="0 0 45 19" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -635,7 +622,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="mi-services4-card border-0 bg-white mb-30">
                             <div class="mi-services-icon mb-25">
-                                <img src="assets/img/icons/services-icon-04-05.png" alt="">
+                                <img src="assets/img/icons/services-icon-04-05.png" alt="Service icon 03">
                             </div>
                             <div class="mi-section-info">
                                 <h2 class="mi-section-title fnw-400 fns-30 mb-15">
@@ -644,7 +631,7 @@
                                 <p class="mb-15">Perfs so ultrices sollicitudin iaculis platea facilis</p>
                             </div>
                             <div class="mi-services4-btn mt-20">
-                                <a href="#">
+                                <a href="#" aria-label="Service button icon">
                                     <svg width="45" height="19" viewBox="0 0 45 19" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -658,7 +645,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="mi-services4-card border-0 bg-white mb-30">
                             <div class="mi-services-icon mb-25">
-                                <img src="assets/img/icons/services-icon-04-02.png" alt="">
+                                <img src="assets/img/icons/services-icon-04-02.png" alt="Service icon 04">
                             </div>
                             <div class="mi-section-info">
                                 <h2 class="mi-section-title fnw-400 fns-30 mb-15">
@@ -667,7 +654,7 @@
                                 <p class="mb-15">Perfs so ultrices sollicitudin iaculis platea facilis</p>
                             </div>
                             <div class="mi-services4-btn mt-20">
-                                <a href="#">
+                                <a href="#" aria-label="Service button icon">
                                     <svg width="45" height="19" viewBox="0 0 45 19" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -681,7 +668,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="mi-services4-card border-0 bg-white mb-30">
                             <div class="mi-services-icon mb-25">
-                                <img src="assets/img/icons/services-icon-04-06.png" alt="">
+                                <img src="assets/img/icons/services-icon-04-06.png" alt="Service icon 05">
                             </div>
                             <div class="mi-section-info">
                                 <h2 class="mi-section-title fnw-400 fns-30 mb-15">
@@ -690,7 +677,7 @@
                                 <p class="mb-15">Perfs so ultrices sollicitudin iaculis platea facilis</p>
                             </div>
                             <div class="mi-services4-btn mt-20">
-                                <a href="#">
+                                <a href="#" aria-label="Service button icon">
                                     <svg width="45" height="19" viewBox="0 0 45 19" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -704,7 +691,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div class="mi-services4-card border-0 bg-white mb-30">
                             <div class="mi-services-icon mb-25">
-                                <img src="assets/img/icons/services-icon-04-07.png" alt="">
+                                <img src="assets/img/icons/services-icon-04-07.png" alt="Service icon 06">
                             </div>
                             <div class="mi-section-info">
                                 <h2 class="mi-section-title fnw-400 fns-30 mb-15">
@@ -713,7 +700,7 @@
                                 <p class="mb-15">Perfs so ultrices sollicitudin iaculis platea facilis</p>
                             </div>
                             <div class="mi-services4-btn mt-20">
-                                <a href="#">
+                                <a href="#" aria-label="Service button icon">
                                     <svg width="45" height="19" viewBox="0 0 45 19" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -803,7 +790,7 @@
                     </div>
                     <div class="col-lg-6 col-xl-6 text-end d-none d-md-block">
                         <div class="mi-causes-img mb-30">
-                            <img src="assets/img/causes/causes-01.png" alt="">
+                            <img src="assets/img/causes/causes-01.png" alt="Causes image">
                         </div>
                     </div>
                 </div>
@@ -829,7 +816,7 @@
                         <div class="mi-team4-card mb-40">
                             <div class="mi-team4-img">
                                 <div class="mi-team4-bg"></div>
-                                <a href="#"><img src="assets/img/team/team-04-01.png" alt=""></a>
+                                <a href="#"><img src="assets/img/team/team-04-01.png" alt="Team member photo 01"></a>
                             </div>
                             <div class="mi-team4-content text-center mt-35">
                                 <h2 class="mi-team4-content-title fnw-400 fns-30">
@@ -843,7 +830,7 @@
                         <div class="mi-team4-card mb-40">
                             <div class="mi-team4-img">
                                 <div class="mi-team4-bg" data-bg-color="#D6F0FF"></div>
-                                <a href="#"><img src="assets/img/team/team-04-02.png" alt=""></a>
+                                <a href="#"><img src="assets/img/team/team-04-02.png" alt="Team member photo 02"></a>
                             </div>
                             <div class="mi-team4-content text-center mt-35">
                                 <h2 class="mi-team4-content-title fnw-400 fns-30">
@@ -857,7 +844,7 @@
                         <div class="mi-team4-card mb-40">
                             <div class="mi-team4-img">
                                 <div class="mi-team4-bg" data-bg-color="#FFE4FB"></div>
-                                <a href="#"><img src="assets/img/team/team-04-03.png" alt=""></a>
+                                <a href="#"><img src="assets/img/team/team-04-03.png" alt="Team member photo 03"></a>
                             </div>
                             <div class="mi-team4-content text-center mt-35">
                                 <h2 class="mi-team4-content-title fnw-400 fns-30">
@@ -871,7 +858,7 @@
                         <div class="mi-team4-card mb-40">
                             <div class="mi-team4-img">
                                 <div class="mi-team4-bg" data-bg-color="#E2EAD7"></div>
-                                <a href="#"><img src="assets/img/team/team-04-04.png" alt=""></a>
+                                <a href="#"><img src="assets/img/team/team-04-04.png" alt="Team member photo 04"></a>
                             </div>
                             <div class="mi-team4-content text-center mt-35">
                                 <h2 class="mi-team4-content-title fnw-400 fns-30">
@@ -1050,7 +1037,7 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="mi-blog4-card mb-30">
                             <div class="mi-blog4-img">
-                                <a href="#"><img src="assets/img/blog/blog-04-01.jpg" alt=""></a>
+                                <a href="#"><img src="assets/img/blog/blog-04-01.jpg" alt="Blog image"></a>
                             </div>
                             <span class="mi-blog4-meta-vertical d-flex align-items-center">
                                 <img class="mr-10 bg-white" src="assets/img/icons/blog4-icon-01.png" alt="">
@@ -1081,7 +1068,7 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="mi-blog4-card mb-30">
                             <div class="mi-blog4-img">
-                                <a href="#"><img src="assets/img/blog/blog-04-02.jpg" alt=""></a>
+                                <a href="#"><img src="assets/img/blog/blog-04-02.jpg" alt="Blog image"></a>
                             </div>
                             <span class="mi-blog4-meta-vertical d-flex align-items-center" data-bg-color="#D6F0FF">
                                 <img class="mr-10 bg-white" src="assets/img/icons/blog4-icon-01.png" alt="">
@@ -1112,7 +1099,7 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="mi-blog4-card mb-30">
                             <div class="mi-blog4-img">
-                                <a href="#"><img src="assets/img/blog/blog-04-03.jpg" alt=""></a>
+                                <a href="#"><img src="assets/img/blog/blog-04-03.jpg" alt="Blog image"></a>
                             </div>
                             <span class="mi-blog4-meta-vertical d-flex align-items-center" data-bg-color="#FFF3D7">
                                 <img class="mr-10 bg-white" src="assets/img/icons/blog4-icon-01.png" alt="">
@@ -1158,8 +1145,8 @@
                         <div class="col-xl-7 text-end px-0">
                             <div class="mi-newsletter-input">
                                 <h3 class="mi-newsletter-back-title fns-70" data-color="#c6e6f9">Newsletter</h3>
-                                <label data-color="#57595c">Email Here*</label>
-                                <input type="email" data-border-color="#57595c" data-color="#57595c" />
+                                <label for="email" data-color="#57595c">Email Here*</label>
+                                <input id="email" type="email" data-border-color="#57595c" data-color="#57595c" />
                                 <img src="assets/img/icons/send-icon-black.png" alt="" />
                             </div>
                             <button type="submit" class="mi-btn mi-btn-blue-arrow ml-10" href="#">
@@ -1195,29 +1182,30 @@
                                 <div class="row">
                                     <div class="col-xl-6">
                                         <div class="mi-contact-form4-input mb-30">
-                                            <label class="text-uppercase">Full Name*</label>
-                                            <input type="text" required>
+                                            <label for="fullname" class="text-uppercase">Full Name*</label>
+                                            <input id="fullname" type="text" required>
                                             <i class="far fa-user-alt"></i>
                                         </div>
                                     </div>
                                     <div class="col-xl-6">
                                         <div class="mi-contact-form4-input mb-30">
-                                            <label class="text-uppercase">Email Here*</label>
-                                            <input type="email" required>
+                                            <label for="email" class="text-uppercase">Email Here*</label>
+                                            <input id="email" type="email" required>
                                             <i class="far fa-envelope-open"></i>
                                         </div>
                                     </div>
                                     <div class="col-xl-12">
                                         <div class="mi-contact-form4-textarea mb-30">
-                                            <label class="text-uppercase">Write Your Comment*</label>
-                                            <textarea></textarea>
+                                            <label for="comment" class="text-uppercase">Write Your Comment*</label>
+                                            <textarea id="comment"></textarea>
                                             <i class="far fa-comment"></i>
                                         </div>
                                     </div>
                                     <div class="col-xl-12">
                                         <div class="mi-contact-form4-btn mb-30">
-                                            <button type="submit" class="mi-btn mi-btn-blue-arrow" href="#">
-                                                Send Message &nbsp;<i class="far fa-arrow-up"></i>
+                                            <button type="submit" class="mi-btn mi-btn-blue-arrow" href="#"
+                                                aria-label="Send button">
+                                                Send Message &nbsp;<i aria-hidden="true" class="far fa-arrow-up"></i>
                                             </button>
                                         </div>
                                     </div>
@@ -1239,8 +1227,8 @@
                 <h2 class="mi-footer-brand-title fnw-400 fns-30 mb-50">Global Trusted Partner</h2>
                 <div class="row mb-90">
                     <div class="mi-footer-brand-logo d-none d-xl-block">
-                        <a href="#">
-                            <svg width="214" height="37" viewBox="0 0 214 37" fill="none"
+                        <a href="#" aria-label="Brand logo">
+                            <svg aria-hidden="true" width="214" height="37" viewBox="0 0 214 37" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M23.7636 0.843786H32.378V31.3888H24.0607V13.1631L9.9298 31.3888H0L23.7636 0.843786ZM44.9812 13.1209H45.3206C46.9332 13.1209 48.1214 12.1927 48.1214 10.4629C48.1214 8.18472 46.6786 8.01596 44.9812 8.01596H41.841V13.1631L44.9812 13.1209ZM44.9812 24.3854H45.448C47.5273 24.3854 49.0549 23.8791 49.0549 21.5165C49.0549 19.0696 47.3575 18.732 45.0236 18.6477H41.8834V24.3432L44.9812 24.3854ZM78.2927 21.2212V22.4025C78.2078 22.6556 78.2078 22.8666 78.2078 23.1197L72.8186 26.1574L67.005 29.4059L72.8186 26.6636L78.123 24.2166C77.8683 25.3136 77.5289 26.3683 77.0196 27.2543L72.861 29.5747L69.254 31.5998L72.861 29.9122L76.3831 28.2246C75.5344 29.4481 74.3038 30.4185 72.861 31.0935C71.0787 31.9373 68.957 32.4014 66.5382 32.4014C61.5308 32.4014 57.839 29.7434 56.2265 26.0308C54.8685 30.0388 51.0494 31.5576 45.9147 31.5576H33.5661V0.843786H45.6601C51.3464 0.843786 55.8445 2.44698 55.8445 8.56442C55.8445 11.7286 54.232 14.0068 52.577 15.2303C55.2505 16.0741 56.6932 18.8164 56.7357 22.0228H63.2282C63.2282 22.1494 63.2282 22.2759 63.3131 22.4025L61.2338 23.5838L63.3131 22.5291C63.5677 23.3729 64.0345 24.0057 64.6286 24.4698C65.2651 24.9339 65.9865 25.187 66.7928 25.187L64.3316 26.6214L67.2596 25.187C68.7024 25.187 69.8057 24.6807 70.1876 23.8369L72.861 22.5291L78.2078 20.0821C78.2503 20.4196 78.2503 20.8415 78.2927 21.2212ZM72.8186 13.5428C73.8794 14.0068 74.8979 14.6397 75.7466 15.4413L72.8186 17.0445L67.0898 20.293C62.7615 18.943 55.8445 17.9726 55.8445 9.8301C55.8445 3.29076 60.5124 0 66.7504 0C69.2116 0 71.2485 0.59065 72.8186 1.47662C75.7042 3.24857 77.1894 6.2862 77.5713 9.70354H69.7208C69.5086 8.6488 69.0843 8.01596 68.4902 7.63626C67.8961 7.25656 67.1747 7.12999 66.4109 7.12999C64.5862 7.12999 63.7375 7.72064 63.7375 8.81756C63.7799 11.5599 68.7024 11.6864 72.8186 13.5428ZM72.8186 18.0992L76.5953 16.3273C77.2318 17.0867 77.6562 17.9726 77.9108 18.943L72.8186 21.854L70.3573 23.2041V22.9932C70.3573 21.6853 69.2965 21.0525 67.7264 20.4618L72.8186 18.0992ZM92.6782 1.09692C93.145 1.01254 93.6117 1.01254 94.121 1.01254C96.0305 1.01254 97.8977 1.35006 99.5951 1.9829L92.6782 5.9065L78.5049 13.8381C79.8204 7.00342 85.5491 1.68757 92.6782 1.09692ZM92.6782 8.69099L103.117 3.83922L103.881 4.42987L92.6782 10.6739L78.3776 18.732C78.2927 18.268 78.2927 17.8039 78.2927 17.382C78.2078 17.171 78.2078 17.0023 78.2078 16.7913C78.2078 16.5804 78.2078 16.4116 78.2927 16.2007V15.5678L92.6782 8.69099ZM92.6782 13.2474L106.3 6.83466L106.639 7.17218L92.6782 15.0194L79.3536 22.4447C79.0141 21.6853 78.7595 20.7571 78.5897 19.9133L92.6782 13.2474ZM92.6782 17.2554L105.663 11.1802L92.6782 18.4367L80.7539 25.187C80.4144 24.5964 80.075 23.9635 79.7779 23.3729L92.6782 17.2554ZM92.6782 20.5884L109.398 12.7412C109.737 13.9647 109.907 15.3569 109.907 16.7491C109.907 25.4401 102.778 32.4436 94.121 32.4436C93.6117 32.4436 93.145 32.4436 92.6782 32.3592C87.9679 31.9795 83.9366 29.4903 81.2631 25.9464L92.6782 20.5884ZM118.818 0.843786V24.3854H130.191V31.5154H110.543V0.843786H118.818ZM204.537 1.94071H203.264V5.1049H202.33V1.94071H201.142V1.1813H204.537V1.94071ZM209.629 5.14709H208.696V1.94071L207.507 5.1049H206.998L205.895 1.94071L205.81 5.1049H204.961V1.1813H206.404L207.253 3.50171L208.186 1.1813H209.629V5.14709ZM187.478 24.3854H200.293V31.5154H179.203V0.843786H199.742V7.97377H187.478V12.4036H197.875V19.5336H187.478V24.3854ZM155.312 8.90194V0.843786H178.397V8.90194H170.971V31.5576H162.696V8.90194H155.312ZM129.979 0.843786H138.084V19.1961C138.084 22.2338 138.55 24.8495 141.945 24.8495C144.958 24.8495 145.807 22.5291 145.807 19.1961V0.843786H154.082V18.1836C154.082 28.0559 150.347 32.4014 141.945 32.4014C135.156 32.4014 130.912 29.6169 130.021 21.8119C129.894 20.5884 129.809 19.4071 129.809 18.1836V0.843786H129.979ZM129.979 35.6921H213.958V37H23.4242V35.6921H129.979Z"
@@ -1249,8 +1237,8 @@
                         </a>
                     </div>
                     <div class="mi-footer-brand-logo">
-                        <a href="#">
-                            <svg width="182" height="36" viewBox="0 0 182 36" fill="none"
+                        <a href="#" aria-label="Brand logo">
+                            <svg aria-hidden="true" width="182" height="36" viewBox="0 0 182 36" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M13.333 35.4543H0V10.5053C1.05669 11.0206 2.20663 11.3844 3.32548 11.6269C4.38217 11.9301 5.59426 12.0816 6.80635 12.0816C7.95628 12.0816 9.01298 11.9301 10.1318 11.6269C11.2507 11.3844 12.3074 11.0206 13.3019 10.5053L13.333 35.4543ZM5.8429 6.80687C5.8429 5.77616 6.15369 4.89704 6.89959 4.13917C7.64549 3.47224 8.57787 3.10846 9.63456 3.10846C10.6291 3.10846 11.5304 3.47224 12.2763 4.13917C12.96 4.86672 13.333 5.77616 13.333 6.80687C13.333 7.83757 12.96 8.7167 12.2763 9.38362C11.5304 10.1112 10.598 10.5053 9.63456 10.5053C8.57787 10.5053 7.67657 10.1415 6.89959 9.38362C6.12261 8.7167 5.8429 7.83757 5.8429 6.80687ZM17.9638 35.4543V10.5053H30.6752V13.0214C31.6387 12.0816 32.7575 11.3238 34.0007 10.8084C35.2128 10.3537 36.5803 10.1415 38.1031 10.1415C41.1489 10.1415 43.4177 10.8084 44.9095 12.2938C46.4945 13.7793 47.2715 15.9013 47.2715 18.7812V35.4543H35.2439V20.7517C35.2439 19.63 35.0263 18.7509 34.5601 18.2355C34.1872 17.7202 33.5034 17.508 32.6021 17.508C32.2292 17.508 31.9184 17.5686 31.6076 17.6596C31.2657 17.8414 30.9549 18.0537 30.7063 18.3265V35.4543H17.9638ZM64.2408 35.4543H51.2807V3.92696H64.2408V18.569C65.8258 17.8414 66.9758 16.8714 67.7217 15.5375C68.4676 14.2946 68.8716 12.597 68.9337 10.5053H81.8938C81.9559 10.8084 81.9559 11.0813 81.9559 11.2328C81.9559 11.445 82.0181 11.5966 82.0181 11.7482C82.0181 13.5974 81.5519 15.2344 80.7439 16.6895C79.9047 18.1749 78.6926 19.5694 76.9522 20.7517C78.6926 22.2371 79.998 23.9347 80.806 25.7839C81.6451 27.6938 82.0803 29.9067 82.0803 32.4229C82.0803 32.9382 82.0181 33.4536 82.0181 33.9689C82.0181 34.4236 81.9559 34.939 81.8627 35.4543H69.0581V34.848C69.0581 31.4528 68.6851 28.7245 67.846 26.7843C67.0068 24.8745 65.7947 23.6013 64.2097 23.0859L64.2408 35.4543Z"
@@ -1265,8 +1253,8 @@
                         </a>
                     </div>
                     <div class="mi-footer-brand-logo">
-                        <a href="#">
-                            <svg width="179" height="43" viewBox="0 0 179 43" fill="none"
+                        <a href="#" aria-label="Brand logo">
+                            <svg aria-hidden="true" width="179" height="43" viewBox="0 0 179 43" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M41.0925 7.6614V1.46784H32.1641V7.6614H41.0925ZM41.1643 34.2257V9.77365H32.1641V34.2257H41.1643ZM109.401 34.2973V1.46784H100.437V34.2973H109.401ZM125.142 8.98603C117.397 8.98603 111.086 14.929 111.086 22.2682C111.086 29.6074 117.361 35.5503 125.142 35.5503C132.887 35.5503 139.198 29.6074 139.198 22.2682C139.162 14.929 132.887 8.98603 125.142 8.98603ZM125.142 15.2512C128.047 15.2512 130.377 18.4017 130.377 22.2682C130.377 26.1347 128.047 29.2852 125.142 29.2852C122.274 29.2852 119.907 26.1347 119.907 22.2682C119.907 18.4017 122.238 15.2512 125.142 15.2512ZM9.82492 13.3179H15.8131C18.0363 13.3179 19.3988 12.4945 19.3988 10.2749C19.3988 8.55642 17.9645 7.912 15.8131 7.912H9.82492V13.3179ZM9.82492 25.9915H16.4585C18.6817 25.9915 20.5821 25.5619 20.5821 22.9126C20.5821 20.9077 19.3988 19.7263 16.8888 19.7263H9.82492V25.9915ZM0 34.2257V0H19.2195C26.1759 0 28.4708 4.65412 28.4708 8.16261C28.4708 10.4539 27.0365 13.7834 24.4906 15.1796C27.5743 16.2178 30.4071 18.7955 30.4071 23.8076C30.4071 30.6814 24.9926 34.2257 19.865 34.2257H0ZM42.4551 21.3015C42.4193 30.7888 50.2362 33.4381 53.6068 33.5455C55.5072 33.5455 58.6268 32.9727 60.348 31.3974V34.0467C60.2762 37.3046 55.0411 38.7008 53.6785 35.6935H45.0369C45.5747 38.2712 47.4752 43.1401 56.9774 42.9969C64.364 42.8895 69.2406 40.6699 69.2406 33.0801V9.80945H60.3838V11.2773C59.1288 10.2033 56.7981 9.05763 54.1446 9.02183C49.5907 9.09344 42.5268 11.8143 42.4551 21.3015ZM51.4912 21.1225C51.4912 18.0795 53.6426 15.6092 56.2602 15.6092C58.8778 15.6092 61.0292 18.0795 61.0292 21.1225C61.0292 24.1656 58.8778 26.6359 56.2602 26.6359C53.6068 26.6359 51.4912 24.1656 51.4912 21.1225ZM79.9619 24.7742C80.7508 27.8173 82.9022 29.3926 85.1971 29.3926C86.7031 29.3926 88.4243 28.8913 88.8546 27.0297L97.9982 26.9939C95.9902 31.9702 90.8626 35.5145 84.8744 35.5145C77.1292 35.5145 70.8183 29.5716 70.8183 22.2324C70.8183 14.8932 77.0933 8.95023 84.8744 8.95023C92.6196 8.95023 98.3926 15.3586 98.4643 22.2324C98.4643 23.0916 98.3926 23.9508 98.2133 24.7384L79.9619 24.7742ZM80.0337 19.4041H89.1773C88.8187 16.898 87.0258 15.2512 84.9103 15.2512C82.6871 15.2512 80.7867 16.719 80.0337 19.4041ZM137.585 9.84525L144.433 34.2973H154.474L157.952 21.946L161.537 34.2973H171.578L178.462 9.84525H168.96L166.414 24.5594L162.219 9.84525H153.756L149.561 24.5594L147.051 9.84525H137.585ZM175.773 31.1826H176.598C176.956 31.1826 177.351 31.3258 177.351 31.7912C177.351 32.3282 176.849 32.364 176.382 32.364H175.737V32.5788H176.526L177.422 33.9751H177.709L176.813 32.5788C177.243 32.5072 177.602 32.2566 177.602 31.7912C177.602 31.2542 177.315 30.9678 176.633 30.9678H175.486V33.9751H175.737L175.773 31.1826Z"
@@ -1278,8 +1266,8 @@
                         </a>
                     </div>
                     <div class="mi-footer-brand-logo d-none d-lg-block">
-                        <a href="#">
-                            <svg width="145" height="36" viewBox="0 0 145 36" fill="none"
+                        <a href="#" aria-label="Brand logo">
+                            <svg aria-hidden="true" width="145" height="36" viewBox="0 0 145 36" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M35.2511 36L42.984 3.39231C43.3324 1.52308 45.074 0 47.0943 0H55.0363C56.0116 0 56.9869 0.415385 57.2656 1.31538L63.6749 18.4846L68.1335 0H71.8955L65.2076 28.0385H63.5356L54.897 4.98462C54.6183 4.15385 53.9913 3.6 53.225 3.6H48.0697C47.2337 3.6 46.6763 3.73846 46.4673 4.5L39.0131 36H35.2511Z"
@@ -1300,8 +1288,8 @@
                         </a>
                     </div>
                     <div class="mi-footer-brand-logo">
-                        <a href="#">
-                            <svg width="186" height="40" viewBox="0 0 186 40" fill="none"
+                        <a href="#" aria-label="Brand logo">
+                            <svg aria-hidden="true" width="186" height="40" viewBox="0 0 186 40" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M151.221 2.228L161.696 1.09127C161.56 6.68401 155.166 18.4151 148.002 19.1427C149.952 16.3235 151.72 9.77594 151.221 2.228ZM180.332 4.59242C173.53 4.45601 162.331 5.22899 157.887 15.0049L166.865 27.6C165.142 28.9641 162.557 29.3278 160.698 28.9641V39.9677C166.003 40.195 175.888 39.4675 182.055 29.6916L173.394 16.6873C174.755 14.9595 177.974 14.9595 180.287 15.3232V4.59242H180.332ZM183.053 33.5565C184.413 33.5565 185.456 34.6477 185.456 36.0573C185.456 37.5123 184.413 38.6036 183.053 38.6036C181.692 38.6036 180.604 37.5123 180.604 36.0573C180.649 34.6477 181.692 33.5565 183.053 33.5565V33.1018C181.42 33.1018 180.06 34.3749 180.06 36.0573C180.06 37.7397 181.42 39.0128 183.053 39.0128C184.685 39.0128 186 37.6942 186 36.0573V36.0118C186 34.3295 184.64 33.0563 183.053 33.0563V33.5565Z"
@@ -1381,24 +1369,26 @@
                     <div class="mi-footer-widget mb-30">
                         <h4 class="fnw-400 fns-20 mb-5 text-white">Newsletter</h4>
                         <div class="mi-newsletter-input">
-                            <label data-color="#b1b4ba">Email Here*</label>
-                            <input type="email">
-                            <button type="submit" data-color="#b1b4ba"><i class="far fa-arrow-right"></i></button>
+                            <label for="email" data-color="#b1b4ba">Email Here*</label>
+                            <input id="email" type="email">
+                            <button type="submit" data-color="#b1b4ba" aria-label="Send button"><i
+                                    class="far fa-arrow-right"></i></button>
                         </div>
                         <div class="check-box d-flex align-items-center mt-10">
-                            <input type="checkbox">
+                            <label for="checkbox"></label>
+                            <input id="checkbox" type="checkbox">
                             <span class="ml-10" data-color="#b1b4ba">I Agree to terms & Condition</span>
                         </div>
                         <div class="mi-team-social footer-social mt-40">
                             <ul class="list-unstyled d-flex" data-color="#b1b4ba">
                                 <li class="mr-20">
-                                    <a href="#"><i class="fab fa-behance"></i></a>
+                                    <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
                                 </li>
                                 <li class="mr-20">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -1416,7 +1406,7 @@
                 </div>
                 <div class="col-lg-2 col-xl-3 col-xxl-4 d-none d-md-block">
                     <div class="mi-footer-logo text-center">
-                        <a href="#"><img src="assets/img/logos/footer-logo.png" alt=""></a>
+                        <a href="#"><img src="assets/img/logos/footer-logo.png" alt="Footer logo"></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-xl-5 col-xxl-4 d-none d-md-block">
